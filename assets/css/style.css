@@ -121,6 +121,15 @@ Version:        1.0.0
   font-weight: 700;
   src: local("Muli Bold"), url("../fonts/text-font/Muli-Bold.woff") format("woff");
 }
+
+/* Logo */
+
+.navbar-header img {
+  margin: 0;
+}
+
+/* End of Logo adjustments */
+
 /* 1.1	Theme Reset Style */
 html {
   font-size: 15px;
