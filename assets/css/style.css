@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme Name:     Charitio - Multipurpose Charity Nonprofit HTML5 Template
-Version:        1.0.0
--------------------------------------------------------------------*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
 
 1. General
 	1.1 Theme Reset Style
@@ -462,10 +454,10 @@ h2.hidden {
 }
 
 .theme-btn-s2 {
-  background: linear-gradient(to left, rgba(93, 196, 184, 0.75), #41b2a5);
+ background: linear-gradient(to left, rgba(4, 97, 30, 0.75), #04611e);
 }
 .theme-btn-s2:after {
-  background: linear-gradient(to left, #41b2a5, rgba(93, 196, 184, 0.75));
+  background: linear-gradient(to left, #04611e, rgba(4, 97, 30, 0.75));
 }
 @media (max-width: 991px) {
   .theme-btn-s2 {
