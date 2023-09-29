@@ -1,1 +1,1 @@
-# mviringo_africa
+# mviringo-africa
