@@ -4642,9 +4642,9 @@ wpo-hero-section-6
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  content: "";
+  content: "✔";
   font-family: "Flaticon";
-  color: #ef5f34;
+  color: #5dc4b8;
 }
 
 @media (max-width: 991px) {
@@ -5742,6 +5742,10 @@ wpo-hero-section-6
 .wpo-features-section-s2 .col:nth-child(2) .wpo-features-item {
   background: #fde4dd;
   top: 70px;
+}
+
+.fa.fa-trash, .fa-graduation-cap, .fa-recycle, .fa-globe{
+  font-size:1.3rem;
 }
 @media (max-width: 1199px) {
   .wpo-features-section-s2 .col:nth-child(2) .wpo-features-item {

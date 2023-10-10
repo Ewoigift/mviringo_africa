@@ -1,6 +1,6 @@
 (function($) {
 
-	"use strict";
+    "use strict";
 
 
     /*------------------------------------------
@@ -78,12 +78,12 @@
     });
 
 
-    $('.wpo-payment-select .addToggle').on('click', function(){
+    $('.wpo-payment-select .addToggle').on('click', function() {
         $('.payment-name').addClass('active')
         $('.wpo-payment-option').removeClass('active')
     })
-    
-    $('.wpo-payment-select .removeToggle').on('click', function(){
+
+    $('.wpo-payment-select .removeToggle').on('click', function() {
         $('.wpo-payment-option').addClass('active')
         $('.payment-name').removeClass('active')
     });
@@ -95,9 +95,9 @@
         if ($(".parallax").length) {
             $(".parallax").each(function() {
                 var height = $(this).position().top;
-                var resize     = height - $(window).scrollTop();
-                var doParallax = -(resize/5);
-                var positionValue   = doParallax + "px";
+                var resize = height - $(window).scrollTop();
+                var doParallax = -(resize / 5);
+                var positionValue = doParallax + "px";
                 var img = $(this).data("bg-image");
 
                 $(this).css({
@@ -111,8 +111,8 @@
 
     // HERO SLIDER
     var menu = [];
-    jQuery('.swiper-slide').each( function(index){
-        menu.push( jQuery(this).find('.slide-inner').attr("data-text") );
+    jQuery('.swiper-slide').each(function(index) {
+        menu.push(jQuery(this).find('.slide-inner').attr("data-text"));
     });
     var interleaveOffset = 0.5;
     var swiperOptions = {
@@ -142,15 +142,15 @@
                     var innerOffset = swiper.width * interleaveOffset;
                     var innerTranslate = slideProgress * innerOffset;
                     swiper.slides[i].querySelector(".slide-inner").style.transform =
-                    "translate3d(" + innerTranslate + "px, 0, 0)";
-                }      
+                        "translate3d(" + innerTranslate + "px, 0, 0)";
+                }
             },
 
             touchStart: function() {
-              var swiper = this;
-              for (var i = 0; i < swiper.slides.length; i++) {
-                swiper.slides[i].style.transition = "";
-              }
+                var swiper = this;
+                for (var i = 0; i < swiper.slides.length; i++) {
+                    swiper.slides[i].style.transition = "";
+                }
             },
 
             setTransition: function(speed) {
@@ -158,7 +158,7 @@
                 for (var i = 0; i < swiper.slides.length; i++) {
                     swiper.slides[i].style.transition = speed + "ms";
                     swiper.slides[i].querySelector(".slide-inner").style.transition =
-                    speed + "ms";
+                        speed + "ms";
                 }
             }
         }
@@ -168,8 +168,8 @@
 
     // DATA BACKGROUND IMAGE
     var sliderBgSetting = $(".slide-bg-image");
-    sliderBgSetting.each(function(indx){
-        if ($(this).attr("data-background")){
+    sliderBgSetting.each(function(indx) {
+        if ($(this).attr("data-background")) {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
@@ -182,7 +182,7 @@
         = HIDE PRELOADER
     -------------------------------------------*/
     function preloader() {
-        if($('.preloader').length) {
+        if ($('.preloader').length) {
             $('.preloader').delay(100).fadeOut(500, function() {
 
                 //active wow
@@ -199,11 +199,11 @@
         = WOW ANIMATION SETTING
     -------------------------------------------*/
     var wow = new WOW({
-        boxClass:     'wow',      // default
+        boxClass: 'wow', // default
         animateClass: 'animated', // default
-        offset:       0,          // default
-        mobile:       true,       // default
-        live:         true        // default
+        offset: 0, // default
+        mobile: true, // default
+        live: true // default
     });
 
 
@@ -212,9 +212,9 @@
     -------------------------------------------*/
     if ($(".fancybox").length) {
         $(".fancybox").fancybox({
-            openEffect  : "elastic",
-            closeEffect : "elastic",
-            wrapCSS     : "project-fancybox-title-style"
+            openEffect: "elastic",
+            closeEffect: "elastic",
+            wrapCSS: "project-fancybox-title-style"
         });
     }
 
@@ -223,17 +223,17 @@
         = POPUP VIDEO
     -------------------------------------------*/
     if ($(".video-btn").length) {
-        $(".video-btn").on("click", function(){
+        $(".video-btn").on("click", function() {
             $.fancybox({
                 href: this.href,
                 type: $(this).data("type"),
-                'title'         : this.title,
-                helpers     : {
-                    title : { type : 'inside' },
-                    media : {}
+                'title': this.title,
+                helpers: {
+                    title: { type: 'inside' },
+                    media: {}
                 },
 
-                beforeShow : function(){
+                beforeShow: function() {
                     $(".fancybox-wrap").addClass("gallery-fancybox");
                 }
             });
@@ -251,7 +251,7 @@
             type: 'image',
 
             gallery: {
-              enabled: true
+                enabled: true
             },
 
             zoom: {
@@ -274,7 +274,7 @@
         if ($(".sortable-gallery .gallery-filters").length) {
             var $container = $('.gallery-container');
             $container.isotope({
-                filter:'*',
+                filter: '*',
                 animationOptions: {
                     duration: 750,
                     easing: 'linear',
@@ -287,7 +287,7 @@
                 $(this).addClass('current');
                 var selector = $(this).attr('data-filter');
                 $container.isotope({
-                    filter:selector,
+                    filter: selector,
                     animationOptions: {
                         duration: 750,
                         easing: 'linear',
@@ -307,13 +307,13 @@
     -------------------------------------------*/
     function masonryGridSetting() {
         if ($('.masonry-gallery').length) {
-            var $grid =  $('.masonry-gallery').masonry({
+            var $grid = $('.masonry-gallery').masonry({
                 itemSelector: '.grid-item',
                 columnWidth: '.grid-item',
                 percentPosition: true
             });
 
-            $grid.imagesLoaded().progress( function() {
+            $grid.imagesLoaded().progress(function() {
                 $grid.masonry('layout');
             });
         }
@@ -322,7 +322,7 @@
     // masonryGridSetting();
 
 
-      /*------------------------------------------
+    /*------------------------------------------
         = FUNFACT
     -------------------------------------------*/
     if ($(".odometer").length) {
@@ -379,10 +379,10 @@
 
 
 
-/*------------------------------------------
-        = Header search toggle
-    -------------------------------------------*/
-    if($(".header-search-form-wrapper").length) {
+    /*------------------------------------------
+            = Header search toggle
+        -------------------------------------------*/
+    if ($(".header-search-form-wrapper").length) {
         var searchToggleBtn = $(".search-toggle-btn");
         var searchToggleBtnIcon = $(".search-toggle-btn i");
         var searchContent = $(".header-search-form");
@@ -410,29 +410,29 @@
             autoplay: true,
             smartSpeed: 300,
             margin: 0,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
             nav: false,
-            items:5,
+            items: 5,
             responsive: {
-                0 : {
+                0: {
                     items: 3
                 },
 
-                500 : {
+                500: {
                     items: 3
                 },
 
-                768 : {
+                768: {
                     items: 3,
                 },
 
-                1200 : {
+                1200: {
                     items: 4
                 },
 
-                1400 : {
+                1400: {
                     items: 5
                 },
 
@@ -450,29 +450,29 @@
             autoplay: true,
             smartSpeed: 300,
             margin: 20,
-            loop:true,
-            center:true,
-            autoplayHoverPause:true,
+            loop: true,
+            center: true,
+            autoplayHoverPause: true,
             dots: false,
             nav: false,
             responsive: {
-                0 : {
+                0: {
                     items: 1
                 },
 
-                500 : {
+                500: {
                     items: 1
                 },
 
-                768 : {
+                768: {
                     items: 2,
                 },
 
-                1200 : {
+                1200: {
                     items: 3
                 },
 
-                1400 : {
+                1400: {
                     items: 4
                 },
 
@@ -487,31 +487,31 @@
             autoplay: true,
             smartSpeed: 300,
             margin: 100,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
             nav: true,
-            navText: ['<i class="fi flaticon-left-arrow"></i>','<i class="fi flaticon-right-arrow"></i>'],
-            items:2,
+            navText: ['<i class="fi flaticon-left-arrow"></i>', '<i class="fi flaticon-right-arrow"></i>'],
+            items: 2,
             responsive: {
-                0 : {
+                0: {
                     items: 1,
                 },
 
-                767 : {
+                767: {
                     items: 2
                 },
-                1200 : {
+                1200: {
                     items: 2
                 },
-                1300 : {
+                1300: {
                     items: 2
                 },
 
-                1400 : {
+                1400: {
                     items: 2,
                 },
-                1500 : {
+                1500: {
                     items: 2
                 },
 
@@ -527,31 +527,31 @@
             autoplay: true,
             smartSpeed: 300,
             margin: 30,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
             nav: true,
-            navText: ['<i class="fi flaticon-left-arrow"></i>','<i class="fi flaticon-right-arrow"></i>'],
-            items:2,
+            navText: ['<i class="fi flaticon-left-arrow"></i>', '<i class="fi flaticon-right-arrow"></i>'],
+            items: 2,
             responsive: {
-                0 : {
+                0: {
                     items: 1,
                 },
 
-                767 : {
+                767: {
                     items: 2
                 },
-                1200 : {
+                1200: {
                     items: 2
                 },
-                1300 : {
+                1300: {
                     items: 2
                 },
 
-                1400 : {
+                1400: {
                     items: 2,
                 },
-                1500 : {
+                1500: {
                     items: 3
                 },
 
@@ -564,27 +564,27 @@
     -------------------------------------------*/
     if ($(".partners-slider").length) {
         $(".partners-slider").owlCarousel({
-            autoplay:true,
+            autoplay: true,
             smartSpeed: 300,
             margin: 30,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
-            nav:false,
+            nav: false,
             responsive: {
-                0 : {
+                0: {
                     items: 2
                 },
 
-                550 : {
+                550: {
                     items: 3
                 },
 
-                992 : {
+                992: {
                     items: 4
                 },
 
-                1200 : {
+                1200: {
                     items: 6
                 }
             }
@@ -595,30 +595,30 @@
     -------------------------------------------*/
     if ($(".gallery-active").length) {
         $(".gallery-active").owlCarousel({
-            autoplay:true,
+            autoplay: true,
             smartSpeed: 300,
             margin: 0,
-            loop:true,
-            autoplayHoverPause:true,
+            loop: true,
+            autoplayHoverPause: true,
             dots: false,
-            nav:false,
+            nav: false,
             responsive: {
-                0 : {
+                0: {
                     items: 1
                 },
 
-                550 : {
+                550: {
                     items: 2
                 },
 
-                992 : {
+                992: {
                     items: 2
                 },
 
-                1200 : {
+                1200: {
                     items: 3
                 },
-                1400 : {
+                1400: {
                     items: 4
                 }
             }
@@ -632,22 +632,22 @@
     /*------------------------------------------
         = POST SLIDER
     -------------------------------------------*/
-    if($(".post-slider".length)) {
+    if ($(".post-slider".length)) {
         $(".post-slider").owlCarousel({
             mouseDrag: false,
             smartSpeed: 500,
             margin: 30,
-            loop:true,
+            loop: true,
             nav: true,
-            navText: ['<i class="fi ti-arrow-left"></i>','<i class="fi ti-arrow-right"></i>'],
+            navText: ['<i class="fi ti-arrow-left"></i>', '<i class="fi ti-arrow-right"></i>'],
             dots: false,
             items: 1
         });
-    }  
+    }
 
 
 
-     /*------------------------------------------
+    /*------------------------------------------
         = BACK TO TOP BTN SETTING
     -------------------------------------------*/
     $("body").append("<a href='#' class='back-to-top'><i class='ti-arrow-up'></i></a>");
@@ -683,7 +683,7 @@
                 email: "required",
 
                 phone: "required",
-                
+
                 subject: {
                     required: true
                 }
@@ -698,24 +698,24 @@
                 subject: "Please select your contact subject"
             },
 
-            submitHandler: function (form) {
+            submitHandler: function(form) {
                 $.ajax({
                     type: "POST",
                     url: "mail-contact.php",
                     data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
+                    success: function() {
+                        $("#loader").hide();
+                        $("#success").slideDown("slow");
                         setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
+                            $("#success").slideUp("slow");
                         }, 3000);
                         form.reset();
                     },
                     error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
+                        $("#loader").hide();
+                        $("#error").slideDown("slow");
                         setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
+                            $("#error").slideUp("slow");
                         }, 3000);
                     }
                 });
@@ -730,16 +730,16 @@
     /*==========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/
-        $(window).on('load', function() {
+    $(window).on('load', function() {
 
-            preloader();  
-            
-            sortingGallery();
+        preloader();
 
-            toggleMobileNavigation();
+        sortingGallery();
 
-            smallNavFunctionality();
-        });
+        toggleMobileNavigation();
+
+        smallNavFunctionality();
+    });
 
 
 
@@ -748,8 +748,8 @@
     ==========================================================================*/
     $(window).on("scroll", function() {
 
-		if ($(".wpo-site-header").length) {
-           stickyMenu( $('.wpo-site-header .navigation'), "sticky-on" );
+        if ($(".wpo-site-header").length) {
+            stickyMenu($('.wpo-site-header .navigation'), "sticky-on");
         }
 
         toggleBackToTopBtn();
@@ -792,7 +792,7 @@
         } else {
             $pwd.attr('type', 'text');
         }
-    });  
+    });
 
     $(".reveal2").on('click', function() {
         var $pwd = $(".pwd3");
