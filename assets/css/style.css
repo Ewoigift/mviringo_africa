@@ -10075,3 +10075,14 @@ input[type=checkbox]:checked:disabled + label:before {
 .error-404-section .error-message p {
   margin-bottom: 1.8em;
 }/*# sourceMappingURL=style.css.map */
+
+.profiles img{
+  height: 400px;
+  width: 340px !important;  
+}
+/* .grid-left img{
+  height:300px ;
+} */
+.environment .grid img{
+  height: 200px;
+}
