@@ -10086,3 +10086,11 @@ input[type=checkbox]:checked:disabled + label:before {
 .environment .grid img{
   height: 200px;
 }
+.partner-grids img{
+  height: 100px;
+  width: 200px !important;
+}
+.navbar-brand img{
+  width: 100px;
+  height: 40px;
+}
