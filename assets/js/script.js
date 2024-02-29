@@ -577,15 +577,15 @@
                 },
 
                 550: {
-                    items: 3
+                    items: 2
                 },
 
                 992: {
-                    items: 4
+                    items: 2
                 },
 
                 1200: {
-                    items: 6
+                    items: 2
                 }
             }
         });
