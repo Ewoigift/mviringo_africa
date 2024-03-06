@@ -6674,11 +6674,22 @@ wpo-hero-section-6
 }
 .wpo-event-area-s2 .wpo-event-single .wpo-event-item .wpo-event-content a.read-more {
   font-size: 18px;
-  color: #212158;
-  font-weight: 600;
+  color:#ef5f34 ;
+  font-weight: 900;
+   animation: bounce 0.5s infinite; /* Apply the bounce animation */
 }
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px); /* Adjust the bounce height as needed */
+  }
+}
+
 .wpo-event-area-s2 .wpo-event-single .wpo-event-item .wpo-event-content a.read-more:hover {
-  color: #ef5f34;
+  color: #212158;
 }
 
 /* 6.8 wpo-blog-section-s2 */
@@ -10093,4 +10104,50 @@ input[type=checkbox]:checked:disabled + label:before {
 .navbar-brand img{
   width: 100px;
   height: 100px;
+}
+
+
+.wpo-section-title-events {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media (max-width: 767px) {
+ .wpo-section-title-events {
+    margin-bottom: 40px;
+  }
+}
+.wpo-section-title-events span {
+  font-size: 18px;
+  font-size: 1.2rem;
+  color: #12930e;
+  font-family: "Roboto Slab", serif;
+}
+.wpo-section-title-events h2 {
+  font-size: 40px;
+  font-size: 2.6666666667rem;
+  margin: 0;
+  position: relative;
+  text-transform: capitalize;
+  font-family: "Roboto Slab", serif;
+  margin: 15px 0 20px;
+}
+@media (max-width: 1200px) {
+ .wpo-section-title-events h2 {
+    font-size: 35px;
+    font-size: 2.3333333333rem;
+  }
+}
+@media (max-width: 767px) {
+ .wpo-section-title-events h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .wpo-section-title-events h2 {
+    font-size: 22px;
+  }
+}
+.wpo-section-title-events p {
+  max-width: 580px;
+  font-size: 18px;
 }

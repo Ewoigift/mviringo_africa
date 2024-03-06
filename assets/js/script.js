@@ -402,6 +402,35 @@
     }
 
 
+    // Mapping of section names to their corresponding HTML file sections
+    var sectionMap = {
+        "home": "#",
+        "about": "#about",
+        "team": "#team",
+        "event": "#event",
+        "volunteer": "volunteer.html",
+        "contact": "#contacts"
+    };
+
+    // Function to perform the search
+    function performSearch(query) {
+        // Convert query to lowercase for case-insensitive matching
+        query = query.toLowerCase();
+
+        // Check if the query matches any section names
+        if (query in sectionMap) {
+            // Scroll to the corresponding section
+            var sectionId = sectionMap[query];
+            $('html, body').animate({
+                scrollTop: $(sectionId).offset().top
+            }, 1000);
+        } else {
+            // Handle case when no match is found
+            console.log("No matching section found for: " + query);
+        }
+    }
+
+
     /*------------------------------------------
         = Testimonial SLIDER
     -------------------------------------------*/
