@@ -379,56 +379,6 @@
 
 
 
-    /*------------------------------------------
-            = Header search toggle
-        -------------------------------------------*/
-    if ($(".header-search-form-wrapper").length) {
-        var searchToggleBtn = $(".search-toggle-btn");
-        var searchToggleBtnIcon = $(".search-toggle-btn i");
-        var searchContent = $(".header-search-form");
-        var body = $("body");
-
-        searchToggleBtn.on("click", function(e) {
-            searchContent.toggleClass("header-search-content-toggle");
-            searchToggleBtnIcon.toggleClass("fi flaticon-search fi ti-close");
-            e.stopPropagation();
-        });
-
-        body.on("click", function() {
-            searchContent.removeClass("header-search-content-toggle");
-        }).find(searchContent).on("click", function(e) {
-            e.stopPropagation();
-        });
-    }
-
-
-    // Mapping of section names to their corresponding HTML file sections
-    var sectionMap = {
-        "home": "#",
-        "about": "#about",
-        "team": "#team",
-        "event": "#event",
-        "volunteer": "volunteer.html",
-        "contact": "#contacts"
-    };
-
-    // Function to perform the search
-    function performSearch(query) {
-        // Convert query to lowercase for case-insensitive matching
-        query = query.toLowerCase();
-
-        // Check if the query matches any section names
-        if (query in sectionMap) {
-            // Scroll to the corresponding section
-            var sectionId = sectionMap[query];
-            $('html, body').animate({
-                scrollTop: $(sectionId).offset().top
-            }, 1000);
-        } else {
-            // Handle case when no match is found
-            console.log("No matching section found for: " + query);
-        }
-    }
 
 
     /*------------------------------------------
