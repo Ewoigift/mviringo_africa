@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .team-member-page {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 150px;
+            /* Adjusted for header overlap */
+            margin-bottom: 150px;
+            /* Added for footer spacing */
+            overflow: hidden;
+        }
+        
+        .team-member-photo {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .team-member-photo img {
+            max-width: 75%;
+            /* Adjusted size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-member-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        
+        .team-member-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #071739;
+        }
+        
+        .team-member-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #4B6382;
+        }
+        
+        .team-member-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .team-member-info strong {
+            font-weight: bold;
+            color: #333;
+        }
+        /* Tablet view */
+        
+        @media (max-width: 768px) {
+            .team-member-page {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 100px;
+                /* Adjusted for header overlap */
+                margin-bottom: 100px;
+                /* Added for footer spacing */
+            }
+            .team-member-info {
+                padding-left: 0;
+                padding-top: 20px;
+            }
+            .team-member-photo img {
+                max-width: 65%;
+                /* Adjusted size */
+            }
+        }
+        /* Mobile view */
+        
+        @media (max-width: 480px) {
+            .team-member-page {
+                padding: 10px;
+                margin-top: 80px;
+                /* Adjusted for header overlap */
+                margin-bottom: 80px;
+                /* Added for footer spacing */
+            }
+            .team-member-info h1 {
+                font-size: 2rem;
+            }
+            .team-member-info h2 {
+                font-size: 1.2rem;
+            }
+            .team-member-info p {
+                font-size: 1rem;
+            }
+            .team-member-photo img {
+                max-width: 60%;
+                /* Adjusted size */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu"><button type="button" class="navbar-toggler open-btn"><span
+                                            class="sr-only">Toggle navigation</span><span
+                                            class="icon-bar first-angle"></span><span
+                                            class="icon-bar middle-angle"></span><span
+                                            class="icon-bar last-angle"></span></button></div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder"><button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children"><a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="about.html">About Us</a></li>
+                                        <li class="menu-item-has-children"><a href="team.html">Team</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cleanups.html">Clean Ups</a></li>
+                                                <li><a href="tree-planting.html">Tree Planting</a></li>
+                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li><a href="workshops.html">Workshops</a></li>
+                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="blog.html">Blog</a></li>
+                                        <li class="menu-item-has-children"><a href="volunteer.html">Volunteer</a></li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2">
+                                <div class="header-right">
+                                    <div class="close-form"><a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact"><a href="#"><button
+                                                    class="search-toggle-btn"><i class="fa fa-home"
+                                                        aria-hidden="true"></i></button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- Start page content -->
+        <section>
+            <!-- Start team member page -->
+            <div class="container">
+                <div class="team-member-page">
+                    <div class="team-member-photo">
+                        <img src="assets/images/wind-summit/Natalie.jpg" alt="natalie">
+                    </div>
+                    <div class="team-member-info">
+                        <h1>Natalie Bullut</h1>
+                        <h2>Law student & Founder, Mviringo Africa</h2>
+                        <p><strong>Age:</strong> 21</p>
+                        <p>Natalie Bullut is a law student at the Catholic University of Eastern Africa and the visionary founder of Mviringo Africa. She is passionate about promoting meaningful youth inclusion, a circular economy and sustainability in her
+                            community in Kenya. Through Mviringo, Natalie actively engages in raising awareness of climate-related issues through climate education and awareness campaigns. Through Mviringo Africa, she has raised awareness on the plastic
+                            pollution in CUEA successfully reaching 500 students at the university and launching the first recycling bin. Her passion to promote climate education has also seen her launch campaigns on social media to create awareness about
+                            climate change and the various interrelated topics. Beyond her commitment to environmental advocacy, Natalie finds joy in writing and exploring new places.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- End team member page -->
+        </section>
+        <!-- End page content -->
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer ">
+            <div class="wpo-upper-footer ">
+                <div class="container " id="contacts">
+                    <div class="row ">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget about-widget ">
+                                <div class="logo widget-title ">
+                                    <img style="width: 200px; height: 200px; " src="assets/images/MVIRINGO_LOGO.png " alt="blog ">
+                                </div>
+                                <p>Join us in leveraging young peoples voices in promoting the principles of a circular economy
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="https://wa.me/254798270470 ">
+                                            <i class="fa-brands fa-whatsapp "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/MviringoAfrica">
+                                            <i class="fa-brands fa-x-twitter "></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/mviringoafrica">
+                                            <i class="fa-brands fa-instagram "></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget link-widget ">
+                                <div class="widget-title ">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#About">About Us</a></li>
+                                    <li><a href="#contacts">Contact us</a></li>
+                                    <li><a href="#events">Events</a></li>
+                                    <li><a href="volunteer.html">Become a Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget wpo-service-link-widget ">
+                                <div class="widget-title ">
+                                    <h3>Contact </h3>
+                                </div>
+                                <div class="contact-ft ">
+                                    <p>Would you have any enquiries.Please feel free to contact us</p>
+                                    <ul style="text-decoration: none; color:aliceblue;">
+                                        <li><i class="fa-regular fa-envelope"></i><a href="mailto:mviringoafrica@gmail.com">mviringoafrica@gmail.com</a>
+                                        </li>
+                                        <li><i class="fa-solid fa-phone"></i><a href="tel:+254798270470">+254 798
+                                               270470</a></li>
+                                        <li><i class="fa-solid fa-location-dot "></i>Nairobi Kenya</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col col-xs-12 ">
+                            <p class="copyright "> &copy; 2024 Mviringo Africa. Design By
+                                <a href="https://ewoigiftportfolio.netlify.app/ ">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

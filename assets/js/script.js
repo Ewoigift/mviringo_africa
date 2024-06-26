@@ -183,17 +183,12 @@
     -------------------------------------------*/
     function preloader() {
         if ($('.preloader').length) {
-            $('.preloader').delay(100).fadeOut(500, function() {
-
+            $('.preloader').delay(50).fadeOut(300, function() {
                 //active wow
                 wow.init();
-
-
-
             });
         }
     }
-
 
     /*------------------------------------------
         = WOW ANIMATION SETTING
@@ -358,7 +353,7 @@
         var st = $(window).scrollTop();
         var mainMenuTop = $('.wpo-site-header .navigation');
 
-        if ($(window).scrollTop() > 1000) {
+        if ($(window).scrollTop() > 500) {
             if (st > lastScrollTop) {
                 // hide sticky menu on scroll down
                 $targetMenu.removeClass($toggleClass);

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .wpo-breadcumb-area {
+            background: url(../mviringo_africa/assets/images/tree-planting/treeplanting.JPG) no-repeat center top / cover;
+        }
+        
+        .wpo-project-title-area {
+            margin-top: 100px;
+            /* Adjust as needed */
+            text-align: center;
+        }
+        
+        .wpo-project-title-wrap h2 {
+            font-size: 36px;
+            /* Adjust as needed */
+            margin-bottom: 10px;
+        }
+        
+        .wpo-project-title-wrap p {
+            font-size: 18px;
+            /* Adjust as needed */
+            margin-bottom: 20px;
+        }
+        
+        .gallery-description {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .gallery-container .grid {
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+        }
+        
+        .gallery-container .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        @media (max-width: 992px) {
+            .gallery-container .grid {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container .grid {
+                flex: 1 1 calc(100% - 10px);
+            }
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .gallery img {
+            height: 300px;
+            /* Set a standard height for the images */
+            width: auto;
+            /* Adjust the width to maintain the aspect ratio */
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery img {
+                height: 200px;
+                /* Adjust the height for smaller screens */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery img {
+                height: 150px;
+                /* Further adjust the height for very small screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#team">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cleanups.html">Clean Ups</a></li>
+                                                <li><a href="tree-planting.html">Tree Planting</a></li>
+                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li><a href="workshops.html">Workshops</a></li>
+                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <a href="#">
+                                                <button class="search-toggle-btn"><i class="fa fa-home"
+                                                        aria-hidden="true"></i></button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- start of breadcumb-section -->
+        <div class="wpo-breadcumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Tree Planting</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>projects</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of wpo-breadcumb-section-->
+
+        <!-- brief description section -->
+        <section class="gallery-description">
+            <div class="container">
+                <p>Explore our diverse range of projects aimed at transforming communities through sustainable solutions. Each project is a step towards a more environmentally friendly and equitable world.</p>
+            </div>
+        </section>
+
+        <!-- start wpo-project-section -->
+
+        <section class="wpo-project-section section-padding">
+            <div class="container">
+                <div class="wpo-project-wrap">
+                    <div class="row">
+                        <div class="col col-lg-12">
+                            <div class="wpo-project-single-item">
+                                <div class="gallery">
+
+                                    <img src="assets\images\tree-planting\treeplanting1.JPG" alt="Project Image">
+                                    <img src="assets\images\tree-planting\treeplanting2.JPG" alt="Project Image">
+                                    <img src="assets\images\tree-planting\treeplanting3.JPG" alt="Project Image">
+                                    <img src="assets\images\tree-planting\treeplanting5.JPG" alt="Project Image">
+                                    <img src="assets\images\tree-planting\treeplanting4.JPG" alt="Project Image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end container -->
+        </section>
+        <!-- end wpo-project-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img style="width: 200px; height: 200px;" src="assets/images/MVIRINGO_LOGO.png" alt="blog">
+                                </div>
+                                <p>Join us in leveraging young peoples voices in promoting the principles of a circular economy.
+                                </p>
+                                <ul>
+                                    <li>
+                                        <a href="https://wa.me/254798270470" target="_blank">
+                                            <i class="ti ti-world"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.instagram.com/mviringo_africa/" target="_blank">
+                                            <i class="ti ti-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://twitter.com/mviringo_africa" target="_blank">
+                                            <i class="ti ti-twitter-alt"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.linkedin.com/in/mviringo-africa-502861269/" target="_blank">
+                                            <i class="ti ti-linkedin"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#About">About Us</a></li>
+                                    <li><a href="#contacts">Contact us</a></li>
+                                    <li><a href="#events">Events</a></li>
+                                    <li><a href="volunteer.html">Become a Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+                            <div class="widget wpo-service-link-widget">
+                                <div class="widget-title">
+                                    <h3>Contact </h3>
+                                </div>
+                                <div class="contact-ft">
+                                    <p>Would you have any enquiries.Please feel free to contact us</p>
+                                    <ul style="text-decoration: none; color:aliceblue;">
+                                        <li><i class="fa-regular fa-envelope"></i><a href="mailto:mviringoafrica@gmail.com">mviringoafrica@gmail.com</a></li>
+                                        <li><i class="fa-solid fa-phone"></i><a href="tel:+254798270470">+254 798
+                                                270470</a></li>
+                                        <li><i class="fa-solid fa-location-dot"></i>Nairobi Kenya</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By
+                                <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+</html>
+
+</html>

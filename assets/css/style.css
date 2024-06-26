@@ -4006,6 +4006,11 @@ wpo-hero-section-6
 .wpo-features-section-s6 {
   padding-bottom: 60px;
 }
+
+.wpo-features-section-s6 {
+  padding: 60px 0;
+}
+
 @media (max-width: 1199px) {
   .wpo-features-section,
 .wpo-features-section-s2,
@@ -4185,6 +4190,15 @@ wpo-hero-section-6
 .wpo-features-section-s6 .col:nth-child(4) .wpo-features-item .wpo-features-icon .fi {
   color: #e89800;
 }
+
+  @media (min-width: 1200px) {
+            .col-xl-5-centered {
+                flex: 0 0 45%;
+                max-width: 45%;
+                margin-right: 5%;
+                margin-left: 5%;
+            }
+        }
 
 /* 3.3 wpo-about-sections */
 .wpo-about-section,
@@ -7125,6 +7139,56 @@ wpo-hero-section-6
   background: #e9fafa;
 }
 
+ .wpo-features-section-s6 {
+            padding: 60px 0;
+        }
+        .wpo-section-title {
+            margin-bottom: 30px;
+        }
+
+       .wpo-section-title p{
+         display:flex;
+          justify-content:center;
+          align-items:center;
+
+        }
+
+        .wpo-features-item {
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+        }
+      
+         .centered-text {
+            text-align: center;
+        }
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.col-centered {
+    flex: 0 0 auto;
+    margin: 0 1.5rem;
+}
+
+@media (min-width: 1200px) {
+    .col-xl-4-centered {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
 /*--------------------------------------------------------------
 10. about-page
 --------------------------------------------------------------*/
@@ -8277,6 +8341,11 @@ wpo-hero-section-6
 /*--------------------------------------------------------------
 9. wpo-project-single-section
 --------------------------------------------------------------*/
+
+.wpo-project-single-content-bg {
+  width: 100vw;
+    background-color: #5dc4b8;
+}
 @media (max-width: 991px) {
   .wpo-project-single-section {
     padding-bottom: 60px;
@@ -8290,6 +8359,7 @@ wpo-hero-section-6
   width: 100%;
 }
 .wpo-project-single-section .wpo-project-single-wrap .wpo-project-single-content .wpo-project-single-content-des {
+  
   padding: 60px 0;
 }
 @media (max-width: 767px) {

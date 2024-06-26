@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa - Team</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <style>
+        .team-member img {
+            width: 100%;
+            height: 400px;
+            /* Default height for large screens */
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-member:hover img {
+            transform: scale(1.05);
+        }
+        
+        .member-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        
+        .member-info p {
+            margin-bottom: 0;
+            color: #666;
+        }
+        
+        .team-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .team-title h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .team-subtitle {
+            font-size: 1.5rem;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .call-to-action a {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #008000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+        
+        .call-to-action a:hover {
+            background-color: #005000;
+        }
+        
+        .team-intro {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 992px) {
+            .team-member {
+                margin-bottom: 20px;
+            }
+            .team-member img {
+                height: 400px;
+                /* Maintain height for medium screens */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .team-member {
+                margin-bottom: 15px;
+            }
+            .team-member img {
+                height: auto;
+                /* Allow image to adjust height based on content */
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .team-member {
+                margin-bottom: 10px;
+            }
+            .team-member img {
+                height: auto;
+                /* Allow image to adjust height based on content */
+                max-width: 100%;
+            }
+            .member-info {
+                padding: 10px;
+            }
+            .member-info h3 {
+                font-size: 1.1rem;
+            }
+            .member-info p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu"><button type="button" class="navbar-toggler open-btn"><span class="sr-only">Toggle navigation</span><span class="icon-bar first-angle"></span><span class="icon-bar middle-angle"></span><span class="icon-bar last-angle"></span></button></div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder"><button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children"><a href="index.html">Home</a></li>
+                                        <li class="menu-item-has-children"><a class="active" href="about.html">About Us</a></li>
+                                        <li class="menu-item-has-children"><a href="#team">Team</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cleanups.html">Clean Ups</a></li>
+                                                <li><a href="tree-planting.html">Tree Planting</a></li>
+                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li><a href="workshops.html">Workshops</a></li>
+                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children"><a href="blog.html">Blog</a></li>
+                                        <li class="menu-item-has-children"><a href="volunteer.html">Volunteer</a></li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2">
+                                <div class="header-right">
+                                    <div class="close-form"><a class="theme-btn-s2" href="donate.html">Donate Now</a></div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact"><a href="#"><button class="search-toggle-btn"><i class="fa fa-home" aria-hidden="true"></i></button></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- Start page content -->
+        <div class="page-content">
+            <!-- Start team section -->
+            <section class="team-section section-padding">
+                <div class="container">
+                    <div class="team-title">
+                        <h2>Our Team</h2>
+                        <div class="team-subtitle">Meet our wonderful team</div>
+                    </div>
+                    <div class="team-intro">
+                        <p>At Mviringo Africa, our youth-led team is dedicated to transforming communities through sustainable solutions. We strive to empower communities to thrive in harmony with nature, promoting environmental sustainability, economic
+                            empowerment, and social well-being. </p>
+                    </div>
+                    <div class="row">
+                        <!-- Team member 1 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="natalie.html"><img src="assets\images\wind-summit\Natalie.jpg" alt="Team Member 1"></a>
+                                <div class="member-info">
+                                    <h3>Natalie Bullut</h3>
+                                    <p>Founder & CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 2 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="ruth.html"><img src="assets\images\Ruth.jpg" alt="Team Member 2"></a>
+                                <div class="member-info">
+                                    <h3>Ruth Tanui</h3>
+                                    <p>Co-founder</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 3 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="team-member.html"><img src="assets\images\Jewel.jpg" alt="Team Member 3"></a>
+                                <div class="member-info">
+                                    <h3>Jewel Ndungu</h3>
+                                    <p>Head of Operations</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 4 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="team-member.html"><img src="assets\images\wind-summit\Ewoi.jpg" alt="Team Member 4"></a>
+                                <div class="member-info">
+                                    <h3>Ewesit Ewoi</h3>
+                                    <p>Web Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 5 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="team-member.html"><img src="assets\images\wind-summit\Elsie.jpg" alt="Team Member 5"></a>
+                                <div class="member-info">
+                                    <h3>Elsie Kemei</h3>
+                                    <p>Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 6 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="team-member.html"><img src="assets\images\wind-summit\Karen2.jpg" alt="Team Member 6"></a>
+                                <div class="member-info">
+                                    <h3>Karen Muthini</h3>
+                                    <p>Member</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Team member 7 -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <a href="team-member.html"><img src="assets/images/wind-summit/Nelly.jpg" alt="Team Member 7"></a>
+                                <div class="member-info">
+                                    <h3>Nelly Okwach</h3>
+                                    <p>Member</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End team section -->
+            <!-- Start Call-to-Action Section -->
+            <div class="call-to-action"><a href="volunteer.html">Join Us as a Volunteer</a></div>
+            <!-- End Call-to-Action Section -->
+        </div>
+        <!-- End page content -->
+        <!-- Start footer -->
+        <footer class="wpo-site-footer ">
+            <div class="wpo-upper-footer ">
+                <div class="container " id="contacts">
+                    <div class="row ">
+                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget about-widget ">
+                                <div class="logo widget-title "><img style="width: 200px; height: 200px; " src="assets/images/MVIRINGO_LOGO.png " alt="blog "></div>
+                                <p>Join us in leveraging young peoples voices in promoting the principles of a circular economy </p>
+                                <ul>
+                                    <li><a href="https://wa.me/254798270470 "><i class="fa-brands fa-whatsapp "></i></a></li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i class="fa-brands fa-x-twitter "></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i class="fa-brands fa-instagram "></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget link-widget ">
+                                <div class="widget-title ">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#About">About Us</a></li>
+                                    <li><a href="#contacts">Contact us</a></li>
+                                    <li><a href="#events">Events</a></li>
+                                    <li><a href="volunteer.html">Become a Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
+                            <div class="widget wpo-service-link-widget ">
+                                <div class="widget-title ">
+                                    <h3>Contact </h3>
+                                </div>
+                                <div class="contact-ft ">
+                                    <p>Would you have any enquiries.Please feel free to contact us</p>
+                                    <ul style="text-decoration: none; color:aliceblue;">
+                                        <li><i class="fa-regular fa-envelope"></i><a href="mailto:mviringoafrica@gmail.com">mviringoafrica@gmail.com</a></li>
+                                        <li><i class="fa-solid fa-phone"></i><a href="tel:+254798270470">+254 798 270470</a></li>
+                                        <li><i class="fa-solid fa-location-dot "></i>Nairobi Kenya</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end container -->
+            </div>
+            <div class="wpo-lower-footer ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col col-xs-12 ">
+                            <p class="copyright ">&copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/ ">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer -->
+    </div>
+    <!-- End page-wrapper -->
+    <!-- Start scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+    <!-- End scripts -->
+</body>
+
+</html>
