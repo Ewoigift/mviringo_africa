@@ -23,6 +23,38 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        .wpo-features-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .wpo-features-item .wpo-features-text {
+            flex-grow: 1;
+        }
+        
+        .wpo-features-item .icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #4B6382;
+        }
+        
+        .subsection-heading {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #071739;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,11 +70,11 @@
                             <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <div class="mobail-menu">
                                     <button type="button" class="navbar-toggler open-btn">
-                                         <span class="sr-only">Toggle navigation</span>
-                                         <span class="icon-bar first-angle"></span>
-                                         <span class="icon-bar middle-angle"></span>
-                                         <span class="icon-bar last-angle"></span>
-                                     </button>
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-6">
@@ -60,11 +92,11 @@
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="about.html">About
-                                                 Us</a>
+                                                Us</a>
 
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="#team">Team</a>
+                                            <a href="team.html">Team</a>
 
                                         </li>
                                         <li class="menu-item-has-children">
@@ -101,7 +133,7 @@
                                         <div class="cart-search-contact">
                                             <a href="#">
                                                 <button class="search-toggle-btn"><i class="fa fa-home"
-                                                         aria-hidden="true"></i></button>
+                                                        aria-hidden="true"></i></button>
                                             </a>
                                         </div>
                                     </div>
@@ -208,8 +240,68 @@
                     </div>
                 </div>
                 <div class="row">
+                    <!-- Current Programs -->
+                    <div class="col-lg-12">
+                        <div class="wpo-section-title">
+                            <h2 class="subsection-heading">Current Programs</h2>
+                        </div>
+                    </div>
+                    <!-- Cleanups & Strategic Bin Placement -->
+                    <div class="col col-xl-4 col-lg-4 col-sm-6 col-12">
+                        <div class="wpo-features-item">
+                            <div class="wpo-features-icon">
+                                <div class="icon">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="wpo-features-text">
+                                <h2>Cleanups & Strategic Bin Placement</h2>
+                                <p>We organize cleanups and place bins to encourage proper waste disposal at the Catholic University of Eastern Africa.</p>
+                                <p>So far, we have placed one recycling bin and three cages at the university and conducted two cleanups since January 2024.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Awareness Campaigns -->
+                    <div class="col col-xl-4 col-lg-4 col-sm-6 col-12">
+                        <div class="wpo-features-item">
+                            <div class="wpo-features-icon">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="wpo-features-text">
+                                <h2>Awareness Campaigns</h2>
+                                <p>We educate the public on environmental issues through weekly quizzes on Instagram, social media, and webinars with experts.</p>
+                                <p>We create engaging content and provide actionable steps for individuals to contribute to a healthier planet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Educational Workshops -->
+                    <div class="col col-xl-4 col-lg-4 col-sm-6 col-12">
+                        <div class="wpo-features-item">
+                            <div class="wpo-features-icon">
+                                <div class="icon">
+                                    <i class="fa fa-chalkboard-teacher" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="wpo-features-text">
+                                <h2>Educational Workshops</h2>
+                                <p>We host workshops on environmental issues and sustainable practices. So far, 96 students have attended our workshops.</p>
+                                <p>Topics include circular economy, energy conservation, water management, and sustainable gardening.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Upcoming Programs -->
+                    <div class="col-lg-12">
+                        <div class="wpo-section-title">
+                            <h2 class="subsection-heading">Upcoming Programs</h2>
+                        </div>
+                    </div>
                     <!-- Climate Conversations -->
-                    <div class="col col-xl-5 col-lg-5 col-sm-6 col-12  ">
+                    <div class="col col-xl-6 col-lg-6 col-sm-6 col-12">
                         <div class="wpo-features-item">
                             <div class="wpo-features-icon">
                                 <div class="icon">
@@ -218,14 +310,14 @@
                             </div>
                             <div class="wpo-features-text">
                                 <h2>Climate Conversations</h2>
-                                <p>Monthly discussions and forums to engage the community in meaningful conversations about climate change and sustainability. This program fosters open, judgment-free spaces for learning about climate change and taking action.
-                                    Help us design the toolkit by filling out our <a href="https://docs.google.com/forms/d/1QUnzCpS7anqBBGJnalAKbmswFN9s8xPriLOGJw5aNKw/edit?ts=6651da89#responses">Google
-                                        form</a>.</p>
+                                <p>Monthly discussions on climate change and sustainability. We aim to create open, judgment-free spaces for learning about climate action.</p>
+                                <p>Help us design the toolkit by filling out our <a href="https://docs.google.com/forms/d/1QUnzCpS7anqBBGJnalAKbmswFN9s8xPriLOGJw5aNKw/edit?ts=6651da89#responses">Google
+                                      form</a>.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Recycling Drives -->
-                    <div class="col col-xl-5 col-lg-5 col-sm-6 col-12  ">
+                    <div class="col col-xl-6 col-lg-6 col-sm-6 col-12">
                         <div class="wpo-features-item">
                             <div class="wpo-features-icon">
                                 <div class="icon">
@@ -234,14 +326,17 @@
                             </div>
                             <div class="wpo-features-text">
                                 <h2>Recycling Drives</h2>
-                                <p>We are planning our first Recycling Drive to collect recyclable materials, reduce waste, and promote the importance of recycling. These drives will provide drop-off points for items like paper, plastic, glass, and electronics.
-                                    Volunteer at our first Recycling Drive <a href="https://docs.google.com/forms/d/1BwWZmgTbC_JNVBDjrbMCYsMPtVHSMQ-Uhv1T2mpq0os/viewform?ts=666ae690&edit_requested=true">here</a> </p>
+                                <p>We are planning our first drive to collect recyclables, reduce waste, and promote recycling. These drives will provide drop-off points for items like paper, plastic, glass, and electronics.</p>
+                                <p>Volunteer at our first drive <a href="https://docs.google.com/forms/d/1BwWZmgTbC_JNVBDjrbMCYsMPtVHSMQ-Uhv1T2mpq0os/viewform?ts=666ae690&edit_requested=true">here</a>.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
         <!-- end of wpo-features-section -->
 
 
@@ -392,80 +487,90 @@
         </section>
         <!-- end partners-section -->
         <!-- start of wpo-site-footer-section -->
-        <footer class="wpo-site-footer ">
-            <div class="wpo-upper-footer ">
-                <div class="container " id="contacts">
-                    <div class="row ">
-                        <div class="col col-lg-3 col-md-6 col-sm-12 col-12 ">
-                            <div class="widget about-widget ">
-                                <div class="logo widget-title ">
-                                    <img style="width: 200px; height: 200px; " src="assets/images/MVIRINGO_LOGO.png " alt="blog ">
+
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
                                 </div>
-                                <p>Join us in leveraging young peoples voices in promoting the principles of a circular economy
+                                <p>Join us in leveraging young people's voices in promoting the principles of a circular economy.
                                 </p>
-                                <ul>
-                                    <li>
-                                        <a href="https://wa.me/254798270470 ">
-                                            <i class="fa-brands fa-whatsapp "></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://twitter.com/MviringoAfrica">
-                                            <i class="fa-brands fa-x-twitter "></i>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.instagram.com/mviringoafrica">
-                                            <i class="fa-brands fa-instagram "></i>
-                                        </a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
-                        <div class="col col-lg-2 col-md-6 col-sm-12 col-12 ">
-                            <div class="widget link-widget ">
-                                <div class="widget-title ">
+                        <!-- Quick Links -->
+                        <div class="col col-lg-2 col-md-6 col-sm-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
                                     <h3>Quick Links</h3>
                                 </div>
-                                <ul>
-                                    <li><a href="#About">About Us</a></li>
-                                    <li><a href="#contacts">Contact us</a></li>
-                                    <li><a href="#events">Events</a></li>
-                                    <li><a href="volunteer.html">Become a Volunteer</a></li>
+                                <ul class="quick-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#contacts">Contact Us</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
                                     <li><a href="donate.html">Donate</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col col-lg-4 col-md-6 col-sm-12 col-12 ">
-                            <div class="widget wpo-service-link-widget ">
-                                <div class="widget-title ">
-                                    <h3>Contact </h3>
+                        <!-- Contact Info -->
+                        <div class="col col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact Us</h3>
                                 </div>
-                                <div class="contact-ft ">
-                                    <p>Would you have any enquiries.Please feel free to contact us</p>
-                                    <ul style="text-decoration: none; color:aliceblue;">
-                                        <li><i class="fa-regular fa-envelope"></i><a href="mailto:mviringoafrica@gmail.com">mviringoafrica@gmail.com</a></li>
-                                        <li><i class="fa-solid fa-phone"></i><a href="tel:+254798270470">+254 798 270470</a></li>
-                                        <li><i class="fa-solid fa-location-dot "></i>Nairobi Kenya</li>
-                                    </ul>
+                                <ul class="contact-info">
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                                            490</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget social-widget">
+                                <div class="widget-title">
+                                    <h3>Follow Us</h3>
                                 </div>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://wa.me/254746429490">
+                                            <i class="fa-brands fa-whatsapp">
+                                                </i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                              class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                              class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                              class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                              class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end container -->
             </div>
-            <div class="wpo-lower-footer ">
-                <div class="container ">
-                    <div class="row ">
-                        <div class="col col-xs-12 ">
-                            <p class="copyright "> &copy; 2024 Mviringo Africa. Design By
-                                <a href="https://ewoigiftportfolio.netlify.app/ ">Ewoi</a>. All Rights Reserved.</p>
+            <!-- Lower Footer -->
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
+
+
         <!-- end of wpo-site-footer-section -->
     </div>
     <!-- end of page-wrapper -->
@@ -481,7 +586,5 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js "></script>
 </body>
-
-</html>
 
 </html>
