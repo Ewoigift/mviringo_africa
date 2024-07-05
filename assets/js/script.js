@@ -35,6 +35,16 @@
         } else {
             mainNav.removeClass("small-nav");
         }
+        if (windowWidth <= 425) {
+            var abcd = $(".abcd");
+            abcd.removeClass("row align-items-center");
+            abcd.addClass("smallmenu");
+        }
+        if (windowWidth > 425) {
+            var abcd = $(".abcd");
+            abcd.addClass("row align-items-center");
+            abcd.removeClass("smallmenu");
+        }
     }
 
     toggleClassForSmallNav();
@@ -55,7 +65,7 @@
             menuItemWidthSubMenu.on("click", function(e) {
                 var $this = $(this);
                 $this.siblings().slideToggle();
-                e.preventDefault();
+                // e.preventDefault();
                 e.stopImmediatePropagation();
                 $this.toggleClass("rotate");
             })

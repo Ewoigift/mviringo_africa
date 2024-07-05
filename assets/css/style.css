@@ -137,10 +137,31 @@ body {
   font-family: "Muli";
   color: #4f555a;
   background-color: #fff;
-  font-size: 15px;
+  font-size: 15px; 
   font-size: 1rem;
   overflow-x: hidden;
 }
+
+@media screen and (max-width: 425px) {
+  .tohide {
+    display:none !important;
+                                
+}
+.smallmenu{
+  margin:auto; 
+  display: flex; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between;
+}
+.smallmenu > div{
+  margin: 0px 30px ;
+}
+}
+/* Added code to hide some items on nav */
+
+
+
 @media (max-width: 767px) {
   body {
     font-size: 14px;
