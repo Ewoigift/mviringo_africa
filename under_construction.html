@@ -23,94 +23,6 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
-    <style>
-        .wpo-breadcumb-area {
-            background: url(assets/images/cleanups/cleanup17.jpg) no-repeat center top / cover;
-        }
-        
-        .wpo-project-title-area {
-            margin-top: 100px;
-            /* Adjust as needed */
-            text-align: center;
-        }
-        
-        .wpo-project-title-wrap h2 {
-            font-size: 36px;
-            /* Adjust as needed */
-            margin-bottom: 10px;
-        }
-        
-        .wpo-project-title-wrap p {
-            font-size: 18px;
-            /* Adjust as needed */
-            margin-bottom: 20px;
-        }
-        
-        .gallery-description {
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        
-        .gallery-container .grid {
-            flex: 1 1 calc(33.333% - 10px);
-            box-sizing: border-box;
-        }
-        
-        .gallery-container .grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        
-        @media (max-width: 992px) {
-            .gallery-container .grid {
-                flex: 1 1 calc(50% - 10px);
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .gallery-container .grid {
-                flex: 1 1 calc(100% - 10px);
-            }
-        }
-        
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .gallery img {
-            height: 300px;
-            /* Set a standard height for the images */
-            width: auto;
-            /* Adjust the width to maintain the aspect ratio */
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .gallery img {
-                height: 200px;
-                /* Adjust the height for smaller screens */
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .gallery img {
-                height: 150px;
-                /* Further adjust the height for very small screens */
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -135,21 +47,19 @@
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-2 d-lg-none d-flex justify-content-start">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <div class="mobail-menu">
                                     <button type="button" class="navbar-toggler open-btn">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar first-angle"></span>
-                                        <span class="icon-bar middle-angle"></span>
-                                        <span class="icon-bar last-angle"></span>
-                                    </button>
+                                         <span class="sr-only">Toggle navigation</span>
+                                         <span class="icon-bar first-angle"></span>
+                                         <span class="icon-bar middle-angle"></span>
+                                         <span class="icon-bar last-angle"></span>
+                                     </button>
                                 </div>
                             </div>
-                            <div class="col-8 col-lg-3 d-flex justify-content-center justify-content-lg-start">
+                            <div class="col-lg-3 col-md-6 col-6">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html">
-                                        <img src="assets/images/MVIRINGO_LOGO.png" alt="" class="img-fluid">
-                                    </a>
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-1">
@@ -160,7 +70,8 @@
                                             <a class="active" href="index.html">Home</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="about.html">About Us</a>
+                                            <a href="about.html">About
+                                                 Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="team.html">Team</a>
@@ -170,7 +81,9 @@
                                             <ul class="sub-menu">
                                                 <li><a href="cleanups.html">Clean Ups</a></li>
                                                 <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li>
+                                                    <a href="swap-circle.html">Swap Circle</a>
+                                                </li>
                                                 <li><a href="workshops.html">Workshops</a></li>
                                                 <li><a href="planeteer.html">Planeteer Events</a></li>
                                             </ul>
@@ -178,15 +91,17 @@
                                         <li class="menu-item-has-children">
                                             <a href="blog.html">Blog</a>
                                         </li>
+
                                         <li class="menu-item-has-children">
                                             <a href="volunteer.html">Volunteer</a>
                                         </li>
                                         <li><a href="#contacts">Contact</a></li>
                                     </ul>
+
                                 </div>
                                 <!-- end of nav-collapse -->
                             </div>
-                            <div class="col-2 col-lg-3 d-flex justify-content-end">
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
                                 <div class="header-right">
                                     <div class="close-form">
                                         <a class="theme-btn-s2" href="donate.html">Donate Now</a>
@@ -195,8 +110,8 @@
                                         <div class="cart-search-contact">
                                             <a href="index.html">
                                                 <button class="search-toggle-btn">
-                                                    <i class="fa fa-home" aria-hidden="true"></i>
-                                                </button>
+                                                     <i class="fa fa-home" aria-hidden="true"></i>
+                                                 </button>
                                             </a>
                                         </div>
                                     </div>
@@ -208,69 +123,32 @@
                 </nav>
             </div>
         </header>
+
         <!-- end of header -->
 
-        <!-- start of breadcumb-section -->
-        <div class="wpo-breadcumb-area">
+        <!-- start error-404-section -->
+        <section class="error-404-section section-padding">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="wpo-breadcumb-wrap">
-                            <h2>Cleanups</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><span>projects</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end of wpo-breadcumb-section-->
-
-        <!-- brief description section -->
-        <section class="gallery-description">
-            <div class="container">
-                <p>We organize regular cleanups to maintain a litter-free environment to encourage proper waste disposal.
-                </p>
-            </div>
-        </section>
-
-        <!-- start wpo-project-section -->
-
-        <section class="wpo-project-section section-padding">
-            <div class="container">
-                <div class="wpo-project-wrap">
-                    <div class="row">
-                        <div class="col col-lg-12">
-                            <div class="wpo-project-single-item">
-                                <div class="gallery">
-
-                                    <img src="assets/images/cleanups/cleanup2.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup3.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup4.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup5.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup6.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup7.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup8.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup9.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup10.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup11.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup12.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup14.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup15.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup17.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup20.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup19.jpg" alt="Project Image">
-                                </div>
+                    <div class="col col-xs-12">
+                        <div class="content clearfix">
+                            <div class="error">
+                                <img src="assets/images/error-404.png" alt>
+                            </div>
+                            <div class="error-message">
+                                <h1>Page Under Construction!</h1>
+                                <p>We are working hard to bring you this page. Please check back soon for updates!</p>
+                                <a href="index.html" class="theme-btn">Back to home</a>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- end row -->
             </div>
             <!-- end container -->
         </section>
-        <!-- end wpo-project-section -->
+        <!-- end error-404-section -->
+
 
         <!-- start of wpo-site-footer-section -->
         <footer class="wpo-site-footer">
@@ -283,7 +161,7 @@
                                 <div class="logo widget-title">
                                     <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
                                 </div>
-                                <p>Join us in leveraging young people's voices in promoting the principles of a circular economy.
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
                                 </p>
                             </div>
                         </div>
@@ -311,7 +189,7 @@
                                 <ul class="contact-info">
                                     <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
                                     <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
-                                            490</a>
+                                           490</a>
                                     </li>
                                 </ul>
                             </div>
@@ -326,17 +204,17 @@
                                     <li>
                                         <a href="https://wa.me/254746429490">
                                             <i class="fa-brands fa-whatsapp">
-                                            </i>
+                                           </i>
                                         </a>
                                     </li>
                                     <li><a href="https://twitter.com/MviringoAfrica"><i
-                                                class="fa-brands fa-x-twitter"></i></a></li>
+                                               class="fa-brands fa-x-twitter"></i></a></li>
                                     <li><a href="https://www.instagram.com/mviringoafrica"><i
-                                                class="fa-brands fa-instagram"></i></a></li>
+                                               class="fa-brands fa-instagram"></i></a></li>
                                     <li><a href="https://www.tiktok.com/@mviringoafrica"><i
-                                                class="fa-brands fa-tiktok"></i></a></li>
+                                               class="fa-brands fa-tiktok"></i></a></li>
                                     <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
-                                                class="fa-brands fa-linkedin"></i></a></li>
+                                               class="fa-brands fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -369,7 +247,5 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
 </body>
-
-</html>
 
 </html>

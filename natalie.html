@@ -129,18 +129,33 @@
 <body>
     <!-- Start page-wrapper -->
     <div class="page-wrapper">
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="vertical-centered-box">
+                <div class="content">
+                    <div class="loader-circle"></div>
+                    <div class="loader-line-mask">
+                        <div class="loader-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
         <!-- Start header -->
         <header id="header">
             <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <div class="abcd">
+                        <div class="row align-items-center">
                             <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
-                                <div class="mobail-menu"><button type="button" class="navbar-toggler open-btn"><span
-                                            class="sr-only">Toggle navigation</span><span
-                                            class="icon-bar first-angle"></span><span
-                                            class="icon-bar middle-angle"></span><span
-                                            class="icon-bar last-angle"></span></button></div>
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
                             </div>
                             <div class="col-lg-3 col-md-6 col-6">
                                 <div class="navbar-header">
@@ -148,36 +163,57 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-1">
-                                <div id="navbar" class="collapse navbar-collapse navigation-holder"><button class="menu-close"><i class="ti-close"></i></button>
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
                                     <ul class="nav navbar-nav mb-2 mb-lg-0">
-                                        <li class="menu-item-has-children"><a class="active" href="index.html">Home</a>
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="about.html">About Us</a></li>
-                                        <li class="menu-item-has-children"><a href="team.html">Team</a></li>
-                                        <li class="menu-item-has-children"><a href="#">Projects</a>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
                                             <ul class="sub-menu">
                                                 <li><a href="cleanups.html">Clean Ups</a></li>
                                                 <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li>
+                                                    <a href="swap-circle.html">Swap Circle</a>
+                                                </li>
                                                 <li><a href="workshops.html">Workshops</a></li>
                                                 <li><a href="planeteer.html">Planeteer Events</a></li>
                                             </ul>
                                         </li>
-                                        <li class="menu-item-has-children"><a href="blog.html">Blog</a></li>
-                                        <li class="menu-item-has-children"><a href="volunteer.html">Volunteer</a></li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
                                         <li><a href="#contacts">Contact</a></li>
                                     </ul>
+
                                 </div>
                                 <!-- end of nav-collapse -->
                             </div>
                             <div class="col-lg-3 col-md-2 col-2 tohide">
                                 <div class="header-right">
-                                    <div class="close-form"><a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
                                     </div>
                                     <div class="header-search-form-wrapper">
-                                        <div class="cart-search-contact"><a href="#"><button
-                                                    class="search-toggle-btn"><i class="fa fa-home"
-                                                        aria-hidden="true"></i></button></a></div>
+                                        <div class="cart-search-contact">
+                                            <a href="index.html">
+                                                <button class="search-toggle-btn">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -187,6 +223,7 @@
                 </nav>
             </div>
         </header>
+
         <!-- end of header -->
         <!-- Start page content -->
         <section>

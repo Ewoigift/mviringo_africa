@@ -24,98 +24,110 @@
     <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <style>
-        .wpo-breadcumb-area {
-            background: url(assets/images/cleanups/cleanup17.jpg) no-repeat center top / cover;
+        .team-member-page {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 150px;
+            /* Adjusted for header overlap */
+            margin-bottom: 150px;
+            /* Added for footer spacing */
+            overflow: hidden;
         }
         
-        .wpo-project-title-area {
-            margin-top: 100px;
-            /* Adjust as needed */
+        .team-member-photo {
+            flex: 1;
             text-align: center;
         }
         
-        .wpo-project-title-wrap h2 {
-            font-size: 36px;
-            /* Adjust as needed */
+        .team-member-photo img {
+            max-width: 75%;
+            /* Adjusted size */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .team-member-info {
+            flex: 2;
+            padding-left: 20px;
+        }
+        
+        .team-member-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #071739;
+        }
+        
+        .team-member-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #4B6382;
+        }
+        
+        .team-member-info p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
             margin-bottom: 10px;
         }
         
-        .wpo-project-title-wrap p {
-            font-size: 18px;
-            /* Adjust as needed */
-            margin-bottom: 20px;
+        .team-member-info strong {
+            font-weight: bold;
+            color: #333;
         }
-        
-        .gallery-description {
-            margin: 20px 0;
-            text-align: center;
-        }
-        
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-        
-        .gallery-container .grid {
-            flex: 1 1 calc(33.333% - 10px);
-            box-sizing: border-box;
-        }
-        
-        .gallery-container .grid img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        
-        @media (max-width: 992px) {
-            .gallery-container .grid {
-                flex: 1 1 calc(50% - 10px);
-            }
-        }
+        /* Tablet view */
         
         @media (max-width: 768px) {
-            .gallery-container .grid {
-                flex: 1 1 calc(100% - 10px);
+            .team-member-page {
+                flex-direction: column;
+                text-align: center;
+                margin-top: 100px;
+                /* Adjusted for header overlap */
+                margin-bottom: 100px;
+                /* Added for footer spacing */
+            }
+            .team-member-info {
+                padding-left: 0;
+                padding-top: 20px;
+            }
+            .team-member-photo img {
+                max-width: 65%;
+                /* Adjusted size */
             }
         }
-        
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .gallery img {
-            height: 300px;
-            /* Set a standard height for the images */
-            width: auto;
-            /* Adjust the width to maintain the aspect ratio */
-            object-fit: cover;
-            border-radius: 10px;
-        }
-        
-        @media (max-width: 768px) {
-            .gallery img {
-                height: 200px;
-                /* Adjust the height for smaller screens */
-            }
-        }
+        /* Mobile view */
         
         @media (max-width: 480px) {
-            .gallery img {
-                height: 150px;
-                /* Further adjust the height for very small screens */
+            .team-member-page {
+                padding: 10px;
+                margin-top: 80px;
+                /* Adjusted for header overlap */
+                margin-bottom: 80px;
+                /* Added for footer spacing */
+            }
+            .team-member-info h1 {
+                font-size: 2rem;
+            }
+            .team-member-info h2 {
+                font-size: 1.2rem;
+            }
+            .team-member-info p {
+                font-size: 1rem;
+            }
+            .team-member-photo img {
+                max-width: 60%;
+                /* Adjusted size */
             }
         }
     </style>
 </head>
 
 <body>
-
-    <!-- start page-wrapper -->
+    <!-- Start page-wrapper -->
     <div class="page-wrapper">
         <!-- start preloader -->
         <div class="preloader">
@@ -135,21 +147,19 @@
                 <nav class="navigation navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-2 d-lg-none d-flex justify-content-start">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
                                 <div class="mobail-menu">
                                     <button type="button" class="navbar-toggler open-btn">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar first-angle"></span>
-                                        <span class="icon-bar middle-angle"></span>
-                                        <span class="icon-bar last-angle"></span>
-                                    </button>
+                                       <span class="sr-only">Toggle navigation</span>
+                                       <span class="icon-bar first-angle"></span>
+                                       <span class="icon-bar middle-angle"></span>
+                                       <span class="icon-bar last-angle"></span>
+                                   </button>
                                 </div>
                             </div>
-                            <div class="col-8 col-lg-3 d-flex justify-content-center justify-content-lg-start">
+                            <div class="col-lg-3 col-md-6 col-6">
                                 <div class="navbar-header">
-                                    <a class="navbar-brand" href="index.html">
-                                        <img src="assets/images/MVIRINGO_LOGO.png" alt="" class="img-fluid">
-                                    </a>
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-1 col-1">
@@ -160,7 +170,8 @@
                                             <a class="active" href="index.html">Home</a>
                                         </li>
                                         <li class="menu-item-has-children">
-                                            <a href="about.html">About Us</a>
+                                            <a href="about.html">About
+                                               Us</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="team.html">Team</a>
@@ -170,7 +181,9 @@
                                             <ul class="sub-menu">
                                                 <li><a href="cleanups.html">Clean Ups</a></li>
                                                 <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li><a href="swap-circle.html">Swap Circle</a></li>
+                                                <li>
+                                                    <a href="swap-circle.html">Swap Circle</a>
+                                                </li>
                                                 <li><a href="workshops.html">Workshops</a></li>
                                                 <li><a href="planeteer.html">Planeteer Events</a></li>
                                             </ul>
@@ -178,15 +191,17 @@
                                         <li class="menu-item-has-children">
                                             <a href="blog.html">Blog</a>
                                         </li>
+
                                         <li class="menu-item-has-children">
                                             <a href="volunteer.html">Volunteer</a>
                                         </li>
                                         <li><a href="#contacts">Contact</a></li>
                                     </ul>
+
                                 </div>
                                 <!-- end of nav-collapse -->
                             </div>
-                            <div class="col-2 col-lg-3 d-flex justify-content-end">
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
                                 <div class="header-right">
                                     <div class="close-form">
                                         <a class="theme-btn-s2" href="donate.html">Donate Now</a>
@@ -195,8 +210,8 @@
                                         <div class="cart-search-contact">
                                             <a href="index.html">
                                                 <button class="search-toggle-btn">
-                                                    <i class="fa fa-home" aria-hidden="true"></i>
-                                                </button>
+                                                   <i class="fa fa-home" aria-hidden="true"></i>
+                                               </button>
                                             </a>
                                         </div>
                                     </div>
@@ -208,70 +223,31 @@
                 </nav>
             </div>
         </header>
+
         <!-- end of header -->
-
-        <!-- start of breadcumb-section -->
-        <div class="wpo-breadcumb-area">
+        <!-- Start page content -->
+        <section>
+            <!-- Start team member page -->
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="wpo-breadcumb-wrap">
-                            <h2>Cleanups</h2>
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><span>projects</span></li>
-                            </ul>
-                        </div>
+                <div class="team-member-page">
+                    <div class="team-member-photo">
+                        <img src="assets\images\Jewel.jpg" alt="jewel">
+                    </div>
+                    <div class="team-member-info">
+                        <h1>Jewel Ndung'u</h1>
+                        <h2>Head Of Programs, Mviringo Africa</h2>
+
+                        <p>Jewel is a dedicated lawyer whose passions span human rights, sustainable development, policy and advocacy. With over three years of experience in human rights, she has honed her expertise at prominent international NGOs, including
+                            Save the Children International. Currently, she also serves as a policy analyst at the Youth Sustainable Development Network and leads as Director- Policy, Research and Advocacy for Kenya Ni Mimi. A Pan-Africanist at heart,
+                            Jewel believes in African solutions for African problems. She brings to Mviringo Africa her enthusiasm for climate justice, commitment to social justice and equity, problem-solving skills and diverse experiences.
+
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- end of wpo-breadcumb-section-->
-
-        <!-- brief description section -->
-        <section class="gallery-description">
-            <div class="container">
-                <p>We organize regular cleanups to maintain a litter-free environment to encourage proper waste disposal.
-                </p>
-            </div>
+            <!-- End team member page -->
         </section>
-
-        <!-- start wpo-project-section -->
-
-        <section class="wpo-project-section section-padding">
-            <div class="container">
-                <div class="wpo-project-wrap">
-                    <div class="row">
-                        <div class="col col-lg-12">
-                            <div class="wpo-project-single-item">
-                                <div class="gallery">
-
-                                    <img src="assets/images/cleanups/cleanup2.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup3.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup4.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup5.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup6.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup7.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup8.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup9.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup10.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup11.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup12.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup14.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup15.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup17.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup20.jpg" alt="Project Image">
-                                    <img src="assets/images/cleanups/cleanup19.jpg" alt="Project Image">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- end wpo-project-section -->
-
+        <!-- End page content -->
         <!-- start of wpo-site-footer-section -->
         <footer class="wpo-site-footer">
             <div class="wpo-upper-footer">
@@ -283,7 +259,7 @@
                                 <div class="logo widget-title">
                                     <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
                                 </div>
-                                <p>Join us in leveraging young people's voices in promoting the principles of a circular economy.
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
                                 </p>
                             </div>
                         </div>
@@ -369,7 +345,5 @@
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
 </body>
-
-</html>
 
 </html>

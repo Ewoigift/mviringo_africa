@@ -549,7 +549,7 @@
     if ($(".partners-slider").length) {
         $(".partners-slider").owlCarousel({
             autoplay: true,
-            smartSpeed: 300,
+            smartSpeed: 200,
             margin: 30,
             loop: true,
             autoplayHoverPause: true,
@@ -565,11 +565,11 @@
                 },
 
                 992: {
-                    items: 2
+                    items: 3
                 },
 
                 1200: {
-                    items: 2
+                    items: 3
                 }
             }
         });
