@@ -1,9 +1,4 @@
 @charset "UTF-8";
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme Name:     Charitio - Multipurpose Charity Nonprofit HTML5 Template
-Version:        1.0.0
--------------------------------------------------------------------*/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -148,6 +143,37 @@ body {
 @media (max-width: 767px) {
   body {
     font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  .navigation div div {
+    display: flex;
+    flex-direction: row;
+  }
+  .navigation div div {
+    width: auto !important;
+    /* background-color: #0077b5; */
+  }
+  .navigation div div div:nth-child(2){
+    margin-left: 40px;
+  }
+}
+@media (max-width: 320px) {
+  .navigation div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navigation div div div {
+    width: 30px !important;
+    margin: auto;
+    
+  }
+  .navigation div div div:nth-child(2){
+    margin-left: 70px;
+  }
+  .navigation div div div:nth-child(3){
+    margin-left: 70px;
   }
 }
 

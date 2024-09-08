@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        @media (min-width: 992px) {
+            .entry-media img {
+                width: 80%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        
+        .entry-media img {
+            border-radius: 15px;
+            display: block;
+        }
+        
+        .blog-post-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            max-height: 400px;
+            width: auto;
+            border-radius: 8px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 32px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content p {
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content h3 {
+            font-size: 28px;
+            color: #071739;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        blockquote {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #075507;
+            font-style: italic;
+            color: #07571a;
+        }
+        
+        .blog-sidebar {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .blog-sidebar h3 {
+            font-size: 24px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .blog-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-sidebar ul li a {
+            color: #4B6382;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .blog-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Increase the width of the main content */
+        
+        @media (min-width: 992px) {
+            .col-lg-9 {
+                width: 75%;
+            }
+            .col-lg-3 {
+                width: 25%;
+            }
+        }
+        /* Responsive design for smaller screens */
+        
+        @media (max-width: 992px) {
+            .col-lg-9,
+            .col-lg-3 {
+                width: 100%;
+            }
+        }
+        /* Styling for the section header */
+        
+        h3 {
+            font-size: 28px;
+            color: #071739;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            color: #4B6382;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        /* Paragraph styling */
+        
+        p {
+            font-size: 16px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /*aligning text*/
+        
+        @media (max-width: 768px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: justify;
+                word-spacing: 0.5px;
+                hyphens: auto;
+                word-break: break-word;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: left;
+            }
+        }
+        /* Styling for the list items */
+        
+        ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        ol li {
+            position: relative;
+            padding-left: 10px;
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        /* Link styling */
+        
+        a.link {
+            color: #FF5733;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #C13E00;
+            text-decoration: none;
+        }
+        
+        .image-description {
+            font-size: 10px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .entry-media img,
+        .embed-responsive {
+            border-radius: 15px;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Container for iframe (video) */
+        
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the blog content exists
+            var blogContent = document.getElementById("blog-content");
+
+            // If there is no blog content, redirect to the under construction page
+            if (!blogContent || blogContent.innerHTML.trim() === "") {
+                window.location.href = "under_construction.html";
+            }
+        });
+    </script> -->
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="cleanups.html">Clean Ups</a></li>
+                                                <li><a href="tree-planting.html">Tree Planting</a></li>
+                                                <li>
+                                                    <a href="swap-circle.html">Swap Circle</a>
+                                                </li>
+                                                <li><a href="workshops.html">Workshops</a></li>
+                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <a href="index.html">
+                                                <button class="search-toggle-btn">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+
+
+        <!-- end of header -->
+        <!-- start of breadcumb-section -->
+        <div class="wpo-breadcumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Blog</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>News & Blog</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of wpo-breadcumb-section-->
+
+
+        <!-- start wpo-blog-pg-section -->
+        <section class="blog-content section-padding">
+            <div class="container">
+                <div class="row">
+                    <!-- Main Content Area -->
+                    <div class="col-lg-9">
+                        <!-- Blog Post Content -->
+                        <div class="blog-post-content">
+                            <img src="assets/images/kuwinda-blog/ken1.jpg" alt="Kuwinda Cleanup" class="img-fluid blog-image">
+                            <h2>Transforming Waste Management in Kuwinda: A Journey of Community and Resilience</h2>
+                            <p>Kibarazani Youth Group is a Community Based Organization found in Kuwinda Slums, which is home to approximately 10,000 people. Due to limited access to waste management services, improper waste disposal and open waste burning
+                                is common, leading to numerous health challenges amongst other problems. We recently sat down with the founder of Kibarazani Youth Group to gain a better understanding of Kuwinda, and their problem of waste management and
+                                how we can progress together.
+                            </p>
+                            <p>Since 2018, Ken and his group have been trying to take up initiative to make their community a cleaner and more habitable place. The journey as Ken described has been full of challenges from lack of community support to lack
+                                of finances to implement their solutions. In spite of this, Ken and his group have effectively upcycled about 1,000,000 plastic bottles into various innovative designs since 2018. His projects have been featured on Citizen,
+                                National Day celebrations and even had the current President of Kenya, Dr. William Samoei Ruto and some senior government officials visit their workshop in Kibarazani.</p>
+
+                            <p>Despite all these successes, the situation in Kuwinda has remained more or less the same, this is especially after the construction of a road that destroyed and failed to replace the informal collection center that Kibarazani
+                                relied on to segregate waste.</p>
+                            <img src="assets/images/kuwinda-blog/ken-workshop.jpg" alt="Ken at his workshop" class="img-fluid blog-image">
+                            <p class="image-description">Ken at his workshop in Kuwinda—Kibarazani Workshop.</p>
+                            <p>Ken and his team have encountered several challenges, including illegal waste dumping and combating open waste burning within the community.</p>
+                            <p>In reflecting about pressing on, Ken had the following to say, “Kitu nimelearn despite all these frustration ni that, nisipohelp hii community hakuna mtu atatusaidia because huku ni home na wewe huwezi taka home kwako kukae
+                                kuchafu ukijua that there’s something you can do”which directly translates to “One thing I’ve learned despite all these frustrations is that if I don't help this community, no one else will, because this is my home. And
+                                you wouldn't want your home to be dirty when you know there’s something you can do about it”</p>
+                            <p>Every Saturday from 6:00 AM to 8:00 AM, Ken and around 30 young volunteers from Kuwinda dedicate their time to clean up their community—the place they call home. This initiative is entirely dependent on the commitment of those
+                                who show up each week, driven by their shared sense of responsibility. After the cleanup, the group gathers to reflect on their efforts and discuss the future of their community while sharing a cup of tea.</p>
+                            <h3>Ken's Vision for Kuwinda</h3>
+                            <p>In charting a way forward, Ken’s vision is that everyone in Kuwinda can be assisted to segregate their waste at home, establish an effective waste management system and maintain cleanliness of their community. Ken also thanks
+                                Mviringo Africa for the support in ensuring that the project is centered entirely around the community’s views and opinions as he states that for a solution to work, it must put the community at its center.
+                            </p>
+
+
+                            <h3>Mviringo Africa's Collaborative Efforts in Kuwinda: Defining Sustainable Solutions</h3>
+
+                            <p>Mviringo Africa’s mission is to develop sustainable solutions to environmental and climate challenges with a focus on locally-driven approaches. In collaboration with Kibarazani and as part of <a href="https://www.ylabsglobal.org/work/all/ccc-action-lab"
+                                    target="_blank" class="link">Ylab’s project</a> under Project Kuwinda, Mviringo Africa will work to define what sustainable solutions look like for the Kuwinda community, particularly in the areas of waste management and
+                                air pollution. The partnership aims to ensure that the community is actively involved in every step of the process and to transform the community’s perception of waste. The project further seeks to promote sustainable waste
+                                management practices and empower residents to view waste not as a burden but as an opportunity to create a cleaner, healthier environment.</p>
+
+                            <p>While there are strong policies in place, their implementation is hindered by limited information dissemination and a lack of clarity among advocates about their roles in the process.</p>
+
+                            <h4>Our Key Demands:</h4>
+                            <ol class="demands-list">
+                                <li>Simplify the Nairobi Air Quality Act into clear and accessible language tailored for the residents of Kuwinda.
+                                </li>
+                                <li>Break down Section 9(4) of the Sustainable Waste Management Act of 2022, highlighting its importance and relevance to our project.</li>
+                                <li>Establish realistic goals and timelines to guide the community in understanding the issues and developing practical solutions.</li>
+                            </ol>
+
+                            <p>In light of the above key demands, the primary goal of the project is to set up a waste collection center in Kuwinda to help to streamline waste management, reduce open dumping and burning, and improve overall community health
+                                and environmental quality.</p>
+
+                            <p>Through previous projects, Mviringo Africa has been able to advocate and place a recycling bin at the nearby Catholic University of Eastern Africa-a goal that was achieved through community support. The larger community made
+                                up of the students at the Catholic University of Eastern Africa attended the cleanup where we launched the recycle bin. Further, we received grant support from Captain Planet Foundation that was able to help in the purchase
+                                of the bin as well as conducting educational workshops and cleanups within the university to sustain the recycling system we had implemented.</p>
+                            <img src="assets/images/kuwinda-blog/recycle-bin.jpg" alt="Recycle Bin Launch at CUEA" class="img-fluid blog-image">
+                            <p class="image-description">Launching of the Recycle Bin at the Catholic University of Eastern Africa.</p>
+                            <p>Reflecting on his journey, Ken admitted there were many moments when he felt like giving up. One time that especially stood out for him was when he started making chairs out of plastic.He had been designing this particular
+                                chair for almost 2 months and after he was done, he sat on it and it collapsed. Ken’s advice to young people is to press on.
+                            </p>
+
+                            <blockquote>In his words, “Failures will never overtake your success as long as your determination is strong enough.” He goes on to say that there will be times when your failures will challenge you and pull you down, but this is simply
+                                a test of your determination. With persistence and consistency, you will ultimately achieve success.</blockquote>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- Sidebar for Previous/Other Blogs -->
+                    <div class="col-lg-3">
+                        <aside class="blog-sidebar">
+                            <h3>Other Blogs</h3>
+                            <ul>
+
+                            </ul>
+                        </aside>
+
+                        <aside class="blog-sidebar">
+                            <h3>Featured Video</h3>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/MtaKLVzIDBg?si=lLp9L0y6Npez4Shu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </aside>
+
+                        <aside class="blog-sidebar">
+                            <h3>Follow Us</h3>
+                            <ul class="social-icons">
+
+                                <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                            class="fa-brands fa-instagram"></i> Instagram</a></li>
+                                <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                            class="fa-brands fa-tiktok"></i>Tiktok</a></li>
+                                <li><a href="https://twitter.com/MviringoAfrica"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
+                            </ul>
+                        </aside>
+
+                        <aside class="blog-sidebar">
+                            <h3>Get Involved</h3>
+                            <p>Would you like to be part of the team? Join us in making a difference.</p>
+                            <a href="/volunteer.html" class="theme-btn-s2">Volunteer</a>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end wpo-blog-pg-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
+                                </div>
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col col-lg-2 col-md-6 col-sm-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul class="quick-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#contacts">Contact Us</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="col col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="contact-info">
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                                            490</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget social-widget">
+                                <div class="widget-title">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://wa.me/254746429490">
+                                            <i class="fa-brands fa-whatsapp">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                                class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Footer -->
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
