@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        @media (min-width: 992px) {
+            .entry-media img {
+                width: 80%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        
+        .entry-media img {
+            border-radius: 15px;
+            display: block;
+        }
+        
+        .blog-post-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            max-height: 400px;
+            width: auto;
+            border-radius: 8px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 32px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content p {
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content h3 {
+            font-size: 28px;
+            color: #071739;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        blockquote {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #075507;
+            font-style: italic;
+            color: #07571a;
+        }
+        
+        .blog-sidebar {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .blog-sidebar h3 {
+            font-size: 24px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .blog-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-sidebar ul li a {
+            color: #4B6382;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .blog-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Increase the width of the main content */
+        
+        @media (min-width: 992px) {
+            .col-lg-9 {
+                width: 75%;
+            }
+            .col-lg-3 {
+                width: 25%;
+            }
+        }
+        /* Responsive design for smaller screens */
+        
+        @media (max-width: 992px) {
+            .col-lg-9,
+            .col-lg-3 {
+                width: 100%;
+            }
+        }
+        /* Styling for the section header */
+        
+        h3 {
+            font-size: 28px;
+            color: #071739;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            color: #4B6382;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        /* Paragraph styling */
+        
+        p {
+            font-size: 16px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /*aligning text*/
+        
+        @media (max-width: 768px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: justify;
+                word-spacing: 0.5px;
+                hyphens: auto;
+                word-break: break-word;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: left;
+            }
+        }
+        /* Styling for the list items */
+        
+        ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        ol li {
+            position: relative;
+            padding-left: 10px;
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        /* Link styling */
+        
+        a.link {
+            color: #FF5733;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #C13E00;
+            text-decoration: none;
+        }
+        
+        .image-description {
+            font-size: 10px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .entry-media img,
+        .embed-responsive {
+            border-radius: 15px;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Container for iframe (video) */
+        
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the blog content exists
+            var blogContent = document.getElementById("blog-content");
+
+            // If there is no blog content, redirect to the under construction page
+            if (!blogContent || blogContent.innerHTML.trim() === "") {
+                window.location.href = "under_construction.html";
+            }
+        });
+    </script> -->
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                            <ul class="sub-menu">
+
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <a href="index.html">
+                                                <button class="search-toggle-btn">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- start of breadcumb-section -->
+        <div class="wpo-breadcumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Blog</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>News & Blog</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of wpo-breadcumb-section-->
+
+
+        <!-- start wpo-blog-pg-section -->
+        <section class="blog-content section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog-post-content">
+                            <h2>The Ripple Effect of New Perspectives and Personal Action</h2>
+
+                            <!-- Image 1: Water Conservation Campaign -->
+                            <img src="assets\images\ripple_effect\water-conservation.jpg" alt="Water Conservation Campaign" class="img-fluid blog-image">
+                            <p class="image-description">"Every Drop Counts" campaign aimed at water conservation.</p>
+                            <h3>Understanding the Power of Small Steps</h3>
+                            <p>The “EVERY DROP COUNTS” water campaign was launched in different forms across various countries, such as the US, UK, and Singapore, and was also adopted by the United Nations. The campaign aimed at reducing water wastage on
+                                a global scale.</p>
+                            <p>To create public awareness among children, an interactive and playful animated video was developed. The video depicted a tap left open, with the level of water decreasing globally, illustrating how much water is lost within
+                                seconds. This animation aimed to show children the importance of closing taps while brushing their teeth and encouraged them to spread the message to their friends.</p>
+                            <p>The video featured one animated child turning off a tap, followed by more children joining in until the entire screen was filled. The slogan of the campaign was simple yet impactful: “Saving water, saving lives.” It encouraged
+                                children to become “water heroes” by making small but meaningful changes in their daily routines.</p>
+                            <p>The true strength of this campaign lay in its long-lasting impact, achieved through a social ripple effect. Children inspired others, leading to a collective movement to conserve water. The idea was based on the principle that,
+                                “If you teach one friend, they’ll teach two more!”</p>
+                            <p>As a result, the campaign sparked a wave of water conservation challenges, with children encouraging their friends and family to conserve water beyond just the school setting. Its influence has transcended generations, with
+                                reduced water usage now seen as the norm. Different versions of the campaign, containing the same message, continue to be used globally to reduce water wastage and encourage the protection of water sources.</p>
+
+                            <h3>Taking Action Against Climate Change</h3>
+
+                            <!-- Image 2: Climate Change Action -->
+                            <img src="assets/images/cleanups/cleanup20.jpg" alt="Taking Action Against Climate Change" class="img-fluid blog-image">
+                            <p class="image-description">Individuals taking small but meaningful steps to combat climate change.</p>
+
+                            <p>Taking action against climate change in your own life, although seemingly small, is part of a much larger narrative. Research has shown that for sustainability to be achieved, there needs to be a radical shift in the philosophical
+                                outlook towards humanity's relationship with nature. It calls for a view that nature has intrinsic value beyond being merely a resource for human exploitation.</p>
+                            <p>This argument has long existed among philosophers, encapsulated in the idea that “Man exists as a part of nature, not apart from nature.” Recognizing this interconnectedness is essential to reshaping how we approach sustainability
+                                and environmental conservation.</p>
+                            <p>Similarly, according to Business Daily, an all-hands-on-deck approach is required across all aspects of our lives—whether in industry, profession, or at the individual level—to find ways of mitigating climate change. If we
+                                are to save our environment, we must engage in collective action.</p>
+                            <p>The United Nations calls for a whole-of-society approach to address the whole-of-society problem of climate change, stating that everyone needs to take responsibility. The battle against climate change begins with individual,
+                                conscious decisions that promote sustainability in our unique ways. It empowers everyone to take up their own "weapon" in the fight against climate change.</p>
+
+                            <h3>Relevance in Kenya</h3>
+
+                            <!-- Image 3: Climate Impact in Kenya -->
+                            <img src="assets\images\ripple_effect\flooding.jpg" alt="Climate Impact in Kenya" class="img-fluid blog-image">
+                            <p class="image-description">Flooding in Kenya as a result of climate change.</p>
+
+                            <p>The consequences of climate change—such as tsunamis, droughts, and floods—have escalated to the point of becoming a valid existential threat. As a result, sustainability is being termed in various papers as “inevitable and
+                                necessary,” while the transformation to sustainable practices in industries is referred to as “embracing the inevitable.”</p>
+                            <p>Failure to adopt sustainable practices in various industries can be likened to “burying our heads in the sand,” as the life-threatening impacts of climate change continue to destroy the planet. The urgency for climate action
+                                has never been more critical.</p>
+                            <p>According to a World Bank report cited in a <strong>Business Daily </strong> article in 2023, Kenya stands to lose an estimated 3.7 trillion shillings by 2050 due to climate change and a lack of climate action, assuming a projected
+                                annual growth rate of 5%.</p>
+                            <p>Moreover, Kenya is a signatory of the Paris Agreement, where the country has committed to reducing its carbon emissions to net zero by 2050. Encouraging sustainability and actions to mitigate the effects of climate change are
+                                not far out of reach for Kenya; in fact, they are fundamentally ingrained in the country’s agenda, policies, and overall development.</p>
+
+                            <h3>Emulating Nature: Biomimicry</h3>
+
+                            <!-- Image 4: Biomimicry in Architecture -->
+
+                            <p>Nature is an innovator with vast repositories of ideas. According to Streeter (2013), we should learn from nature, as the planet’s natural systems offer a wealth of insights and solutions for the problems humans face. He argues
+                                that the ongoing 3.8 billion-year research and development process in the natural world has resulted in optimized solutions that are inherently tuned to work within the planet’s constraints, making them fundamentally sustainable.</p>
+                            <p>This concept is known as biomimicry. The foundation of biomimicry is based on a key idea: nature always operates on the principles of economy and efficiency while generating no waste. Sustainability can be achieved by emulating
+                                nature’s tried and tested solutions, which are known for their minimal waste generation, circular economy, and sustainability. Biomimicry has already inspired ingenious inventions, from Velcro to the Shinkansen Bullet Train.</p>
+                            <p>The Eastgate Building in Harare, Zimbabwe, which has been termed a global landmark for sustainability and is admired for its singular beauty, remains relevant after 28 years. The building's design is inspired by the passive
+                                cooling system of termite mounds and is still a point of emulation. It has become a beacon studied by architects and construction professionals, achieving sustainable design in an ingenious way, saving costs in both the
+                                short and long term.</p>
+                            <p>The Eastgate Building uses no HVAC systems and achieves 100% energy savings in HVAC-related energy consumption. It uses 90% less energy for ventilation than conventional buildings of its size, making it a standout example of
+                                sustainable architecture. The building has received several awards and continues to be a model for future construction projects.</p>
+                            <p>Biomimicry's strength in promoting sustainable practices in the construction industry is not only limited to inspiring innovative and unconventional construction designs and products. It also introduces a new lens through which
+                                we can view the natural world (MacKinnon, Oomen, & Zari, 2020). Understanding how nature’s systems work fosters an innate approach to sustainability, making it a natural part of everyday life and ingraining in people the
+                                importance of the natural world.</p>
+                            <p>This holistic approach to sustainability transcends the construction industry, imparting sustainable practices to future generations. It creates a tipping point, where a shift in how we live ushers in sustainability as the
+                                norm.
+                            </p>
+                            <p>Sustainability is an intricate web of interconnected issues. It demands a radical rethinking of our philosophical outlook on nature, recognition of the threat posed by climate change, and the need for collective action at both
+                                macro and micro levels. While governments and businesses play crucial roles, individuals also have the power to turn the tide in this fight. Together, through small yet impactful steps, we can make a difference.</p>
+
+                            <blockquote>"Be the change you want to see in the world."</blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-3">
+                        <!-- Blog-specific Featured Video Section -->
+                        <aside class="blog-sidebar" id="featured-video">
+                            <h3>Featured Video</h3>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/620omdSZzBs?si=VyGCgN9pzjlNFQlR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </aside>
+
+                        <!-- Automated Sidebar Content -->
+                        <div id="sidebar-container">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end wpo-blog-pg-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
+                                </div>
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col col-lg-2 col-md-6 col-sm-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul class="quick-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#contacts">Contact Us</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="col col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="contact-info">
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                                            490</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget social-widget">
+                                <div class="widget-title">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://wa.me/254746429490">
+                                            <i class="fa-brands fa-whatsapp">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                                class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Footer -->
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+    <!-- Automated Sidebar script -->
+    <script src="sidebar.js"></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>

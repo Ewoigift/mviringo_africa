@@ -29,6 +29,7 @@
         
         .blog-section {
             padding: 50px 0;
+            background-color: #f9f9f9;
         }
         
         .blog-card {
@@ -38,10 +39,21 @@
             padding: 20px;
             margin-bottom: 30px;
             transition: transform 0.3s ease-in-out;
+            width: 100%;
+            max-width: 350px;
+            flex-grow: 1;
         }
         
         .blog-card:hover {
             transform: translateY(-5px);
+        }
+        /* Flexbox for blog cards container */
+        
+        .blog-card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
         }
         /* Blog Image Styling */
         
@@ -52,7 +64,7 @@
             object-fit: cover;
             border-radius: 10px;
             display: block;
-            margin: 0 auto 20px;
+            margin-bottom: 20px;
         }
         /* Entry Meta and Details */
         
@@ -66,6 +78,7 @@
             display: inline-block;
             margin-right: 10px;
             color: #4B6382;
+            font-size: 14px;
         }
         
         .entry-details h3 {
@@ -95,12 +108,17 @@
         .read-more1:hover {
             background-color: #048a04;
         }
-        /* Responsive Adjustments for Future Multiple Blogs */
+        /* Responsive Adjustments */
         
-        @media (min-width: 992px) {
-            .col-lg-6 {
-                flex: 0 0 50%;
-                max-width: 50%;
+        @media (min-width: 768px) {
+            .blog-card-container {
+                justify-content: space-evenly;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .blog-card {
+                max-width: 100%;
             }
         }
     </style>
@@ -161,13 +179,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Projects</a>
                                             <ul class="sub-menu">
-                                                <li><a href="cleanups.html">Clean Ups</a></li>
-                                                <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li>
-                                                    <a href="swap-circle.html">Swap Circle</a>
-                                                </li>
-                                                <li><a href="workshops.html">Workshops</a></li>
-                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
@@ -230,51 +242,170 @@
         <!-- start wpo-blog-pg-section -->
         <section class="blog-section section-padding">
             <div class="container">
-                <div class="row">
-                    <!-- Blog Post 1 (Full Width for Single Post) -->
-                    <div class="col-lg-12">
-                        <div class="blog-card">
-                            <div class="entry-media">
-                                <img src="assets/images/kuwinda-blog/ken1.jpg" alt="Ken from Kuwinda" class="blog-image">
-                            </div>
-                            <div class="entry-meta">
-                                <ul>
-                                    <li><i class="fa-solid fa-user"></i> By <a >Natalie Bullut and Japheth Orieny’</a>
-                                    </li>
-                                    <li><i class="fa-regular fa-calendar-days"></i> 2 Sep 2024</li>
-                                </ul>
-                            </div>
-                            <div class="entry-details">
-                                <h3><a href="blog-kuwinda.html">Transforming Waste Management in Kuwinda: A Journey of
-                                       Community and Resilience</a></h3>
-                                <p>Explore the journey of the Kibarazani Youth Group in Kuwinda as they tackle waste management challenges, create innovative solutions, and strive for a cleaner environment.
-                                </p>
-                                <a href="blog-kuwinda.html" class="read-more1">READ MORE</a>
-                            </div>
+                <div class="blog-card-container">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/kuwinda-blog/ken1.jpg" alt="Ken from Kuwinda" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Natalie Bullut and Japheth Orieny’</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 2 Sep 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-kuwinda.html">Transforming Waste Management in Kuwinda</a></h3>
+                            <p>Explore the journey of the Kibarazani Youth Group in Kuwinda as they tackle waste management challenges, create innovative solutions, and strive for a cleaner environment.</p>
+                            <a href="blog-kuwinda.html" class="read-more1">READ MORE</a>
                         </div>
                     </div>
 
-                    <!-- Additional blog posts would go here -->
-                    <!-- 
-            <div class="col-lg-6">
-                <div class="blog-card">
-                    <div class="entry-media">
-                        <img src="assets/images/cleanups/cleanup5.jpg" alt="Cleanup Event" class="blog-image">
+                    <!-- Blog Post 2 (Ripple Effect) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/ripple_effect/ripple-effect.jpg" alt="Ripple Effect of Personal Action" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">George Mbugua</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 20 Sep 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-ripple-effect.html">The Ripple Effect of New Perspectives and Personal Action</a></h3>
+                            <p>Discover how small, individual actions contribute to the global fight against climate change and the power of social ripple effects.</p>
+                            <a href="blog-ripple-effect.html" class="read-more1">READ MORE</a>
+                        </div>
                     </div>
-                    <div class="entry-meta">
-                        <ul>
-                            <li><i class="fa-solid fa-user"></i> By <a href="#">Mviringo Africa</a></li>
-                            <li><i class="fa-regular fa-calendar-days"></i> 5 Sep 2024</li>
-                        </ul>
+
+                    <!-- Blog Post 3 (Plastic Pollution) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/dandora/dumpsite.png" alt="Dandora Dumpsite" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">George & Glene</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 12 Oct 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-plastic-pollution.html">The Danger of Plastic Pollution</a></h3>
+                            <p>Learn about the devastating impact of plastic pollution and the global efforts needed to tackle this environmental crisis.</p>
+                            <a href="blog-plastic-pollution.html" class="read-more1">READ MORE</a>
+                        </div>
                     </div>
-                    <div class="entry-details">
-                        <h3><a href="blog-single.html">Another Blog Title</a></h3>
-                        <p>Learn about another inspiring project where the Mviringo Africa team made an impact on the local community's waste management efforts.</p>
-                        <a href="blog-single.html" class="read-more1">READ MORE</a>
+
+                    <!-- Blog Post 4 (Nairobi Youth Climate Hub Launch) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/climate_hub/launch.jpg" alt="Nairobi Youth Climate Hub Launch" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Maxwell Omondi</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 21 Oct 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-climate-hub-launch.html">Empowering Youth for Climate Action: The Launch of the Nairobi Youth Climate Hub</a></h3>
+                            <p>On October 21, 2024, the Nairobi Youth Climate Hub was launched, gathering over 100 young climate leaders to foster impactful climate solutions for Nairobi.</p>
+                            <a href="blog-climate-hub-launch.html" class="read-more1">READ MORE</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-            -->
+
+                    <!-- Blog Post 5 (Public Participation in Climate Action) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/public_participation/children.jpg" alt="Public Participation in Climate Action" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Mbugua George</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 12 Nov 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-public-participation.html">The Power of Public Participation in Climate Action and Sustainable Development</a></h3>
+                            <p>Exploring how public participation is a cornerstone for successful climate action, empowering individuals to play active roles in environmental conservation.</p>
+                            <a href="blog-public-participation.html" class="read-more1">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 6 (KEPRO Conference Reflections) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/kepro/kepro-attendees.jpg" alt="KEPRO Annual Conference 2024" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Glene Komba</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 22 Oct 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-kepro-conference.html">Kenya Extended Producer Responsibility Organization (KEPRO) Annual Conference 2024: Reflections</a></h3>
+                            <p>A look into KEPRO’s annual conference, which explored themes like circularity, green financing, and sustainable packaging.</p>
+                            <a href="blog-kepro-conference.html" class="read-more1">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 7 (Our First Award) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/community_award/community-service-award.jpg" alt="Community Service Award" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Natalie Bullut</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 15 Nov 2024</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-community-service-award.html">We Won Our First Award! – The Journey to the Community Service Award</a></h3>
+                            <p>Discover the inspiring journey that led Mviringo Africa to win its first Community Service Award, symbolizing the power of determination and community collaboration.</p>
+                            <a href="blog-community-service-award.html" class="read-more1">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post (Reflections from Climate Conversations) -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/climate_conversations/climate-convo.jpg" alt="Climate Conversations Workshop" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Mviringo Africa</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 15 Feb 2025</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-climate-conversations.html">Reflections from Climate Conversations</a></h3>
+                            <p>Explore insights from Mviringo Africa’s Climate Conversations workshop—a space where youth discuss climate change, environmental justice, and collective action.</p>
+                            <a href="blog-climate-conversations.html" class="read-more1">READ MORE</a>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post: Creativity in Climate Action -->
+                    <div class="blog-card">
+                        <div class="entry-media">
+                            <img src="assets/images/creativity_blog/creative-climate-action.jpg" alt="Creativity in Climate Action" class="blog-image">
+                        </div>
+                        <div class="entry-meta">
+                            <ul>
+                                <li><i class="fa-solid fa-user"></i> By <a href="#">Mbugua George</a></li>
+                                <li><i class="fa-regular fa-calendar-days"></i> 24 Feb 2025</li>
+                            </ul>
+                        </div>
+                        <div class="entry-details">
+                            <h3><a href="blog-creativity.html">Revolutionizing the Fight Against Climate Change: Creativity as a Game-Changer</a></h3>
+                            <p>Discover how creativity is transforming climate action—from social media to local sustainable solutions.</p>
+                            <a href="blog-creativity.html" class="read-more1">READ MORE</a>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>
@@ -377,84 +508,8 @@
     <script src="assets/js/jquery-plugin-collection.js "></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js "></script>
-</body>
-
-</html>
-<ul class="quick-links ">
-    <li><a href="about.html ">About Us</a></li>
-    <li><a href="#contacts ">Contact Us</a></li>
-    <li><a href="team.html ">Our Team</a></li>
-    <li><a href="volunteer.html ">Volunteer</a></li>
-    <li><a href="donate.html ">Donate</a></li>
-</ul>
-</div>
-</div>
-<!-- Contact Info -->
-<div class="col col-lg-4 col-md-6 col-sm-12 ">
-    <div class="widget contact-widget ">
-        <div class="widget-title ">
-            <h3>Contact Us</h3>
-        </div>
-        <ul class="contact-info ">
-            <li><i class="fa-regular fa-envelope "></i><a href="mailto:info@mviringoafrica.org ">info@mviringoafrica.org</a></li>
-            <li><i class="fa-solid fa-phone "></i><a href="tel:+254746429490 ">+254 746 429
-                                             490</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<!-- Social Links -->
-<div class="col col-lg-3 col-md-6 col-sm-12 ">
-    <div class="widget social-widget ">
-        <div class="widget-title ">
-            <h3>Follow Us</h3>
-        </div>
-        <ul class="social-links ">
-            <li>
-                <a href="https://wa.me/254746429490 ">
-                    <i class="fa-brands fa-whatsapp ">
-                                             </i>
-                </a>
-            </li>
-            <li><a href="https://twitter.com/MviringoAfrica "><i
-                                                 class="fa-brands fa-x-twitter "></i></a></li>
-            <li><a href="https://www.instagram.com/mviringoafrica "><i
-                                                 class="fa-brands fa-instagram "></i></a></li>
-            <li><a href="https://www.tiktok.com/@mviringoafrica "><i
-                                                 class="fa-brands fa-tiktok "></i></a></li>
-            <li><a href="https://www.linkedin.com/company/mviringo-africa/ "><i
-                                                 class="fa-brands fa-linkedin "></i></a></li>
-        </ul>
-    </div>
-</div>
-</div>
-</div>
-</div>
-<!-- Lower Footer -->
-<div class="wpo-lower-footer ">
-    <div class="container ">
-        <div class="row ">
-            <div class="col col-xs-12 ">
-                <p class="copyright "> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/ ">Ewoi</a>. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</div>
-</footer>
-<!-- end of wpo-site-footer-section -->
-</div>
-<!-- end of page-wrapper -->
-
-<!-- All JavaScript files
-    ================================================== -->
-<script src="assets/js/jquery.min.js "></script>
-<script src="assets/js/bootstrap.bundle.min.js "></script>
-<!-- Plugins for this template -->
-<script src="assets/js/modernizr.custom.js "></script>
-<script src="assets/js/jquery.dlmenu.js "></script>
-<script src="assets/js/jquery-plugin-collection.js "></script>
-<!-- Custom script for this template -->
-<script src="assets/js/script.js "></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
 </body>
 
 </html>

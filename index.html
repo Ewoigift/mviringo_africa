@@ -33,6 +33,33 @@
             color: #ef5f34;
             font-weight: 900;
         }
+        
+        .partner-grids {
+            display: flex;
+            justify-content: space-between;
+            /* Even spacing between grids */
+            align-items: center;
+            /* Vertically center the images */
+        }
+        
+        .partner-grids .grid {
+            flex: 1;
+            /* Ensures all grids take equal space */
+            margin: 0 15px;
+            /* Adds horizontal spacing between grids */
+            text-align: center;
+        }
+        
+        .partner-grids img {
+            max-width: 100%;
+            /* Ensures the images don't overflow */
+            height: auto;
+            /* Keeps the images responsive */
+            max-height: 100px;
+            /* Optional: limit the height to make all logos the same size */
+            object-fit: contain;
+            /* Ensures logos fit nicely within the grid */
+        }
     </style>
 
 </head>
@@ -80,13 +107,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Projects</a>
                                             <ul class="sub-menu">
-                                                <li><a href="cleanups.html">Clean Ups</a></li>
-                                                <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li>
-                                                    <a href="swap-circle.html">Swap Circle</a>
-                                                </li>
-                                                <li><a href="workshops.html">Workshops</a></li>
-                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
@@ -361,14 +382,6 @@
 
                                 <div class="grid ">
                                     <div class="img-holder ">
-                                        <img src="assets\images\cleanups\cleanup2.jpg " alt=" ">
-                                        <div class="hover-content ">
-                                            <p>Blue Climate Action Series (BCAS) in 2021. A clean up was held at Strathmore University by Planeteer Alliance member.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid ">
-                                    <div class="img-holder ">
                                         <img src="assets\images\cleanups\cleanup3.jpg " alt=" ">
                                         <div class="hover-content ">
                                             <p>Blue Climate Action Series (BCAS) in 2021. A clean up was held at Strathmore University by Planeteer Alliance member.</p>
@@ -400,6 +413,31 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="grid ">
+                                    <div class="img-holder ">
+                                        <img src="assets/images/swapcircle/swap-circle_2.17.jpeg " alt=" ">
+                                        <div class="hover-content ">
+                                            <p>Swap Circle 2.0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid ">
+                                    <div class="img-holder ">
+                                        <img src="assets/images/Uhuru_wetu/DSC00717.JPG " alt=" ">
+                                        <div class="hover-content ">
+                                            <p>Uhuru Wetu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="grid ">
+                                    <div class="img-holder ">
+                                        <img src="assets/images/swapcircle/swap-circle_1.jpg" alt=" ">
+                                        <div class="hover-content ">
+                                            <p>Swap Circle 1.0</p>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -427,12 +465,12 @@
                             <div class="wpo-event-single ">
                                 <div class="wpo-event-item ">
                                     <div class="wpo-event-img ">
-                                        <img src="assets\images\events\june.jpg" alt="June events ">
+                                        <img src="assets\images\events\november.png" alt="November events ">
                                     </div>
                                     <div class="wpo-event-content ">
                                         <div class="wpo-event-text-top ">
-                                            <span>June </span>
-                                            <h2><a>Events Scheduled for June </a></h2>
+                                            <span>November </span>
+                                            <h2><a>Events Scheduled for November </a></h2>
                                             <p>
                                             </p>
 
@@ -454,114 +492,119 @@
                     <div class="col col-xs-12">
                         <div class="partner-grids partners-slider owl-carousel">
                             <div class="grid">
-                                <img src="assets/images/partners/planeteer.jpg" alt>
+                                <img src="assets/images/partners/planeteer.jpg" alt="Planeteer Logo">
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/captain_planet.jpg" alt>
+                                <img src="assets/images/partners/captain_planet.jpg" alt="Captain Planet Logo">
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/safisha.jpg" alt>
+                                <img src="assets/images/partners/safisha.jpg" alt="Safisha Logo">
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/tuesdaysfortrash.jpg" alt>
+                                <img src="assets/images/partners/tuesdaysfortrash.jpg" alt="Tuesdays for Trash Logo">
                             </div>
                             <div class="grid">
-                                <img src="assets/images/partners/law&justice.jpg" alt>
+                                <img src="assets/images/partners/law&justice.jpg" alt="Law and Justice Logo">
                             </div>
-
+                            <div class="grid">
+                                <img src="assets/images/partners/KENYA_NI_MIMI_LOGO.jpg" alt="Kenya Ni Mimi Logo">
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!-- end container -->
         </section>
         <!-- end partners-section -->
-        <!-- start of wpo-site-footer-section -->
+    </div>
+    <!-- end container -->
 
-        <footer class="wpo-site-footer">
-            <div class="wpo-upper-footer">
-                <div class="container" id="contacts">
-                    <div class="row">
-                        <!-- Logo and Description -->
-                        <div class="col col-lg-3 col-md-6 col-sm-12">
-                            <div class="widget about-widget">
-                                <div class="logo widget-title">
-                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
-                                </div>
-                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
-                                </p>
+    <!-- start of wpo-site-footer-section -->
+
+    <footer class="wpo-site-footer">
+        <div class="wpo-upper-footer">
+            <div class="container" id="contacts">
+                <div class="row">
+                    <!-- Logo and Description -->
+                    <div class="col col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget about-widget">
+                            <div class="logo widget-title">
+                                <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
                             </div>
+                            <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
+                            </p>
                         </div>
-                        <!-- Quick Links -->
-                        <div class="col col-lg-2 col-md-6 col-sm-12">
-                            <div class="widget link-widget">
-                                <div class="widget-title">
-                                    <h3>Quick Links</h3>
-                                </div>
-                                <ul class="quick-links">
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="#contacts">Contact Us</a></li>
-                                    <li><a href="team.html">Our Team</a></li>
-                                    <li><a href="volunteer.html">Volunteer</a></li>
-                                    <li><a href="donate.html">Donate</a></li>
-                                </ul>
+                    </div>
+                    <!-- Quick Links -->
+                    <div class="col col-lg-2 col-md-6 col-sm-12">
+                        <div class="widget link-widget">
+                            <div class="widget-title">
+                                <h3>Quick Links</h3>
                             </div>
+                            <ul class="quick-links">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="#contacts">Contact Us</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="volunteer.html">Volunteer</a></li>
+                                <li><a href="donate.html">Donate</a></li>
+                            </ul>
                         </div>
-                        <!-- Contact Info -->
-                        <div class="col col-lg-4 col-md-6 col-sm-12">
-                            <div class="widget contact-widget">
-                                <div class="widget-title">
-                                    <h3>Contact Us</h3>
-                                </div>
-                                <ul class="contact-info">
-                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
-                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                    </div>
+                    <!-- Contact Info -->
+                    <div class="col col-lg-4 col-md-6 col-sm-12">
+                        <div class="widget contact-widget">
+                            <div class="widget-title">
+                                <h3>Contact Us</h3>
+                            </div>
+                            <ul class="contact-info">
+                                <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
                                             490</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- Social Links -->
-                        <div class="col col-lg-3 col-md-6 col-sm-12">
-                            <div class="widget social-widget">
-                                <div class="widget-title">
-                                    <h3>Follow Us</h3>
-                                </div>
-                                <ul class="social-links">
-                                    <li>
-                                        <a href="https://wa.me/254746429490">
-                                            <i class="fa-brands fa-whatsapp">
+                    </div>
+                    <!-- Social Links -->
+                    <div class="col col-lg-3 col-md-6 col-sm-12">
+                        <div class="widget social-widget">
+                            <div class="widget-title">
+                                <h3>Follow Us</h3>
+                            </div>
+                            <ul class="social-links">
+                                <li>
+                                    <a href="https://wa.me/254746429490">
+                                        <i class="fa-brands fa-whatsapp">
                                             </i>
-                                        </a>
-                                    </li>
-                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                    </a>
+                                </li>
+                                <li><a href="https://twitter.com/MviringoAfrica"><i
                                                 class="fa-brands fa-x-twitter"></i></a></li>
-                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                <li><a href="https://www.instagram.com/mviringoafrica"><i
                                                 class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                <li><a href="https://www.tiktok.com/@mviringoafrica"><i
                                                 class="fa-brands fa-tiktok"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
                                                 class="fa-brands fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Lower Footer -->
-            <div class="wpo-lower-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col col-xs-12">
-                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
-                        </div>
+        </div>
+        <!-- Lower Footer -->
+        <div class="wpo-lower-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <!-- end of wpo-site-footer-section -->
+    <!-- end of wpo-site-footer-section -->
     </div>
     <!-- end of page-wrapper -->
 
@@ -573,6 +616,8 @@
     <script src="assets/js/modernizr.custom.js "></script>
     <script src="assets/js/jquery.dlmenu.js "></script>
     <script src="assets/js/jquery-plugin-collection.js "></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js "></script>

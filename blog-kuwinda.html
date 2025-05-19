@@ -265,7 +265,7 @@
 
     <!-- start page-wrapper -->
     <div class="page-wrapper">
-        
+
         <!-- Start header -->
         <header id="header">
             <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
@@ -304,13 +304,7 @@
                                         <li class="menu-item-has-children">
                                             <a href="#">Projects</a>
                                             <ul class="sub-menu">
-                                                <li><a href="cleanups.html">Clean Ups</a></li>
-                                                <li><a href="tree-planting.html">Tree Planting</a></li>
-                                                <li>
-                                                    <a href="swap-circle.html">Swap Circle</a>
-                                                </li>
-                                                <li><a href="workshops.html">Workshops</a></li>
-                                                <li><a href="planeteer.html">Planeteer Events</a></li>
+
                                             </ul>
                                         </li>
                                         <li class="menu-item-has-children">
@@ -441,16 +435,10 @@
                         </div>
                     </div>
 
-                    <!-- Sidebar for Previous/Other Blogs -->
+                    <!-- Sidebar Area -->
                     <div class="col-lg-3">
-                        <aside class="blog-sidebar">
-                            <h3>Other Blogs</h3>
-                            <ul>
-
-                            </ul>
-                        </aside>
-
-                        <aside class="blog-sidebar">
+                        <!-- Blog-specific Featured Video Section -->
+                        <aside class="blog-sidebar" id="featured-video">
                             <h3>Featured Video</h3>
                             <div class="embed-responsive embed-responsive-16by9">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/MtaKLVzIDBg?si=lLp9L0y6Npez4Shu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -458,23 +446,8 @@
                             </div>
                         </aside>
 
-                        <aside class="blog-sidebar">
-                            <h3>Follow Us</h3>
-                            <ul class="social-icons">
-
-                                <li><a href="https://www.instagram.com/mviringoafrica"><i
-                                            class="fa-brands fa-instagram"></i> Instagram</a></li>
-                                <li><a href="https://www.tiktok.com/@mviringoafrica"><i
-                                            class="fa-brands fa-tiktok"></i>Tiktok</a></li>
-                                <li><a href="https://twitter.com/MviringoAfrica"><i class="fa-brands fa-x-twitter"></i>Twitter</a></li>
-                            </ul>
-                        </aside>
-
-                        <aside class="blog-sidebar">
-                            <h3>Get Involved</h3>
-                            <p>Would you like to be part of the team? Join us in making a difference.</p>
-                            <a href="/volunteer.html" class="theme-btn-s2">Volunteer</a>
-                        </aside>
+                        <!-- Automated Sidebar Content -->
+                        <div id="sidebar-container"></div>
                     </div>
                 </div>
             </div>
@@ -578,6 +551,10 @@
     <script src="assets/js/jquery-plugin-collection.js"></script>
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <!-- Automated Sidebar script -->
+    <script src="sidebar.js"></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <link rel="shortcut icon" type="image/png" href="assets/images/mviringo_preloader.png">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <style>
+        @media (min-width: 992px) {
+            .entry-media img {
+                width: 80%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        
+        .entry-media img {
+            border-radius: 15px;
+            display: block;
+        }
+        
+        .blog-post-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            max-height: 400px;
+            width: auto;
+            border-radius: 8px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 32px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content p {
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content h3 {
+            font-size: 28px;
+            color: #071739;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        blockquote {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #075507;
+            font-style: italic;
+            color: #07571a;
+        }
+        
+        .blog-sidebar {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .blog-sidebar h3 {
+            font-size: 24px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .blog-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-sidebar ul li a {
+            color: #4B6382;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .blog-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Increase the width of the main content */
+        
+        @media (min-width: 992px) {
+            .col-lg-9 {
+                width: 75%;
+            }
+            .col-lg-3 {
+                width: 25%;
+            }
+        }
+        /* Responsive design for smaller screens */
+        
+        @media (max-width: 992px) {
+            .col-lg-9,
+            .col-lg-3 {
+                width: 100%;
+            }
+        }
+        /* Styling for the section header */
+        
+        h3 {
+            font-size: 28px;
+            color: #071739;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            color: #4B6382;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        /* Paragraph styling */
+        
+        p {
+            font-size: 16px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /*aligning text*/
+        
+        @media (max-width: 768px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: justify;
+                word-spacing: 0.5px;
+                hyphens: auto;
+                word-break: break-word;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: left;
+            }
+        }
+        /* Styling for the list items */
+        
+        ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        ol li {
+            position: relative;
+            padding-left: 10px;
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        /* Link styling */
+        
+        a.link {
+            color: #FF5733;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #C13E00;
+            text-decoration: none;
+        }
+        
+        .image-description {
+            font-size: 10px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .entry-media img,
+        .embed-responsive {
+            border-radius: 15px;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Container for iframe (video) */
+        
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Style the check-list ul */
+        
+        .check-list {
+            list-style: none;
+            /* Remove default bullets */
+            padding-left: 0;
+            /* Remove default padding */
+        }
+        
+        .check-list li {
+            position: relative;
+            /* Position relative for the pseudo-element */
+            padding-left: 25px;
+            /* Add space for the check mark */
+            margin-bottom: 10px;
+            /* Add spacing between items */
+        }
+        /* Add the check mark before each li */
+        
+        .check-list li::before {
+            content: "\2713";
+            /* Unicode for check mark */
+            color: green;
+            /* Set the color of the check mark */
+            font-weight: bold;
+            /* Make it bold */
+            position: absolute;
+            /* Position it */
+            left: 0;
+            /* Align to the left of the li */
+            top: 0;
+            /* Align to the top */
+            font-size: 1.2em;
+            /* Adjust size as needed */
+            line-height: 1;
+            /* Ensure alignment with text */
+        }
+    </style>
+
+    <!-- <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Check if the blog content exists
+            var blogContent = document.getElementById("blog-content");
+
+            // If there is no blog content, redirect to the under construction page
+            if (!blogContent || blogContent.innerHTML.trim() === "") {
+                window.location.href = "under_construction.html";
+            }
+        });
+    </script> -->
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                            <ul class="sub-menu">
+
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <a href="index.html">
+                                                <button class="search-toggle-btn">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- start of breadcumb-section -->
+        <div class="wpo-breadcumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Blog</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>News & Blog</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of wpo-breadcumb-section-->
+        <section class="blog-content section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog-post-content">
+                            <h2>Kenya Extended Producer Responsibility Organization (KEPRO) Annual Conference 2024: Reflections</h2>
+
+                            <!-- Featured Image -->
+                            <img src="assets/images/kepro/kepro-attendees.jpg" alt="KEPRO Annual Conference 2024" class="img-fluid blog-image">
+                            <p class="image-description">Attendees engaging during the KEPRO Annual Conference 2024.</p>
+
+                            <p>On 22nd October 2024, I had the incredible opportunity to attend the Kenya Extended Producer Responsibility Organization (KEPRO) Annual Conference 2024 themed “Packaging for a Sustainable Future: Technology, Innovation, and
+                                Finance” held at Shamba Events in Loresho. The event brought together key industry leaders and stakeholders in climate and environmental governance, producer responsibility, circularity, and green financing.</p>
+
+                            <h3>Key Sessions and Insights</h3>
+                            <p>The conference featured several themed sessions:</p>
+                            <ol>
+                                <li><strong>Green Financing Opportunities:</strong> Emphasis on profit responsibility, green bonds, carbon credits, and impact loans.</li>
+                                <li><strong>Design for Circularity:</strong> Advocating for reusable, recyclable packaging designs that drive earnings through carbon credits.</li>
+                                <li><strong>Reclaimer Integration:</strong> Policies and case studies on integrating informal reclaimers into waste management systems.</li>
+                                <li><strong>EAC Harmonization:</strong> Addressing cross-border collaboration and policy frameworks in the East Africa Community.</li>
+                                <li><strong>Leveraging Technology:</strong> Highlights of innovations, including an app called "KOLEKT" for waste trade facilitation.</li>
+                            </ol>
+
+                            <h3>Networking and Career Growth</h3>
+                            <p>During the tea break, Mr. Albert Nyagechi, KEBS Chemical Manager, shared insights on networking and personal branding. His advice, “These people are here for you to access them. Don’t shy away, approach us,” encouraged me to
+                                interact with guests, broadening my professional perspective.</p>
+
+                            <p>Later, I met Mr. Priyyen Tanna, CEO of Drift Opex, who shared invaluable insights on creating unique, sustainable business ideas and branding strategies. The conversations highlighted the importance of such forums for building
+                                meaningful professional connections.</p>
+
+                            <h3>Award Gala Dinner</h3>
+                            <p>The day ended with a Gala Awards Dinner, celebrating organizations for their contributions:</p>
+                            <ul class="check-list">
+                                <li>Consumer Education – <strong>Slums Going Green</strong></li>
+                                <li>Circular Economy Leadership – <strong>Haco Industries</strong></li>
+                                <li>Innovation in Packaging – <strong>Chemolex</strong></li>
+                                <li>Recycling Leadership – <strong>Mtaa Safi Initiative</strong></li>
+                                <li>SME Circularity Champion – <strong>M-Taka</strong></li>
+                                <li>Youth Eco Warrior – <strong>M-Taka</strong></li>
+                            </ul>
+
+
+                            <blockquote>"When you get such an opportunity, do not let it slip through your fingers!"</blockquote>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-3">
+                        <!-- Blog-specific Featured Video -->
+                        <aside class="blog-sidebar" id="featured-video">
+                            <h3>Featured Video</h3>
+                            <div class="embed-responsive">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/af1muNoPgjs?si=-EUfkHir-decZBoL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </div>
+                        </aside>
+
+                        <!-- Automated Sidebar Content -->
+                        <div id="sidebar-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end wpo-blog-pg-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
+                                </div>
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col col-lg-2 col-md-6 col-sm-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul class="quick-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#contacts">Contact Us</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="col col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="contact-info">
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                                            490</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget social-widget">
+                                <div class="widget-title">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://wa.me/254746429490">
+                                            <i class="fa-brands fa-whatsapp">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                                class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Footer -->
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+    <!-- Automated Sidebar script -->
+    <script src="sidebar.js"></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
+</body>
+
+</html>

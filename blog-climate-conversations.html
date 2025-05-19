@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="wpOceans">
+    <title>Mviringo Africa</title>
+    <link href="assets/css/themify-icons.css" rel="stylesheet">
+    <link href="assets/css/flaticon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/slick-theme.css" rel="stylesheet">
+    <link href="assets/css/swiper.min.css" rel="stylesheet">
+    <link href="assets/css/owl.transitions.css" rel="stylesheet">
+    <link href="assets/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/css/odometer-theme-default.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <style>
+        @media (min-width: 992px) {
+            .entry-media img {
+                width: 80%;
+                max-width: 600px;
+                margin: 0 auto;
+            }
+        }
+        
+        .entry-media img {
+            border-radius: 15px;
+            display: block;
+        }
+        
+        .blog-post-content {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .blog-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+            max-height: 400px;
+            width: auto;
+            border-radius: 8px;
+        }
+        
+        .blog-post-content h2 {
+            font-size: 32px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content p {
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .blog-post-content h3 {
+            font-size: 28px;
+            color: #071739;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        
+        blockquote {
+            background-color: #f0f8ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-left: 5px solid #075507;
+            font-style: italic;
+            color: #07571a;
+        }
+        
+        .blog-sidebar {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .blog-sidebar h3 {
+            font-size: 24px;
+            color: #071739;
+            margin-bottom: 20px;
+        }
+        
+        .blog-sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .blog-sidebar ul li {
+            margin-bottom: 10px;
+        }
+        
+        .blog-sidebar ul li a {
+            color: #4B6382;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        .blog-sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Increase the width of the main content */
+        
+        @media (min-width: 992px) {
+            .col-lg-9 {
+                width: 75%;
+            }
+            .col-lg-3 {
+                width: 25%;
+            }
+        }
+        /* Responsive design for smaller screens */
+        
+        @media (max-width: 992px) {
+            .col-lg-9,
+            .col-lg-3 {
+                width: 100%;
+            }
+        }
+        /* Styling for the section header */
+        
+        h3 {
+            font-size: 28px;
+            color: #071739;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            color: #4B6382;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        /* Paragraph styling */
+        
+        p {
+            font-size: 16px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        /*aligning text*/
+        
+        @media (max-width: 768px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: justify;
+                word-spacing: 0.5px;
+                hyphens: auto;
+                word-break: break-word;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .blog-post-content p,
+            .blog-post-content li,
+            .blog-post-content blockquote,
+            .blog-post-content h2,
+            .blog-post-content h3 {
+                text-align: left;
+            }
+        }
+        /* Styling for the list items */
+        
+        ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        ol li {
+            position: relative;
+            padding-left: 10px;
+            font-size: 18px;
+            color: #4B6382;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        /* Link styling */
+        
+        a.link {
+            color: #FF5733;
+            text-decoration: underline;
+        }
+        
+        a:hover {
+            color: #C13E00;
+            text-decoration: none;
+        }
+        
+        .image-description {
+            font-size: 10px;
+            color: #6c757d;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        
+        .entry-media img,
+        .embed-responsive {
+            border-radius: 15px;
+            margin: 20px 0;
+            max-width: 100%;
+            height: auto;
+        }
+        /* Container for iframe (video) */
+        
+        .embed-responsive {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background-color: #000;
+        }
+        
+        .embed-responsive iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        /* Style the check-list ul */
+        
+        .check-list {
+            list-style: none;
+            /* Remove default bullets */
+            padding-left: 0;
+            /* Remove default padding */
+        }
+        
+        .check-list li {
+            position: relative;
+            /* Position relative for the pseudo-element */
+            padding-left: 25px;
+            /* Add space for the check mark */
+            margin-bottom: 10px;
+            /* Add spacing between items */
+        }
+        /* Add the check mark before each li */
+        
+        .check-list li::before {
+            content: "\2713";
+            /* Unicode for check mark */
+            color: green;
+            /* Set the color of the check mark */
+            font-weight: bold;
+            /* Make it bold */
+            position: absolute;
+            /* Position it */
+            left: 0;
+            /* Align to the left of the li */
+            top: 0;
+            /* Align to the top */
+            font-size: 1.2em;
+            /* Adjust size as needed */
+            line-height: 1;
+            /* Ensure alignment with text */
+        }
+        /* Takeaways Grid */
+        
+        .takeaways-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        /* Individual Takeaway Card */
+        
+        .takeaway-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .takeaway-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Takeaway Image */
+        
+        .takeaway-image {
+            width: 100%;
+            /* Full width of the container */
+            height: auto;
+            /* Maintain natural aspect ratio */
+            max-height: 300px;
+            /* Prevent excessive stretching */
+            aspect-ratio: 16 / 9;
+            /* Desired aspect ratio */
+            object-fit: contain;
+            /* Ensures the image fills the area without distortion */
+            object-position: center;
+        }
+        /* Takeaway Content */
+        
+        .takeaway-content {
+            padding: 15px;
+        }
+        
+        .takeaway-content p {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .takeaway-content h4 {
+            font-size: 18px;
+            color: #00796b;
+            margin-bottom: 5px;
+        }
+        
+        .takeaway-content span {
+            font-size: 14px;
+            color: #555;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 col-md-3 col-3 d-lg-none dl-block">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-6">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html"><img src="assets/images/MVIRINGO_LOGO.png" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About
+                                                Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="#">Projects</a>
+                                            <ul class="sub-menu">
+
+                                            </ul>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="blog.html">Blog</a>
+                                        </li>
+
+                                        <li class="menu-item-has-children">
+                                            <a href="volunteer.html">Volunteer</a>
+                                        </li>
+                                        <li><a href="#contacts">Contact</a></li>
+                                    </ul>
+
+                                </div>
+                                <!-- end of nav-collapse -->
+                            </div>
+                            <div class="col-lg-3 col-md-2 col-2 tohide">
+                                <div class="header-right">
+                                    <div class="close-form">
+                                        <a class="theme-btn-s2" href="donate.html">Donate Now</a>
+                                    </div>
+                                    <div class="header-search-form-wrapper">
+                                        <div class="cart-search-contact">
+                                            <a href="index.html">
+                                                <button class="search-toggle-btn">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </button>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of container -->
+                </nav>
+            </div>
+        </header>
+        <!-- end of header -->
+        <!-- start of breadcumb-section -->
+        <div class="wpo-breadcumb-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="wpo-breadcumb-wrap">
+                            <h2>Blog</h2>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><span>News & Blog</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of wpo-breadcumb-section-->
+        <section class="blog-content section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="blog-post-content">
+                            <h2>Reflections from Climate Conversations</h2>
+
+                            <!-- Featured Image -->
+                            <img src="assets/images/climate_conversations/climate-convo.jpg" alt="Climate Conversations Workshop" class="img-fluid blog-image">
+                            <p class="image-description">A collaborative workshop empowering youth to engage in climate action.</p>
+
+                            <p><strong>Climate Conversations</strong> is an educational workshop series led by <strong>Mviringo Africa</strong> to empower young people to participate actively in addressing the climate crisis. Recognizing that climate change
+                                disproportionately affects youth, this initiative seeks to bridge the gap. Many young people want to engage in climate discussions but struggle to find the right platform or make an impactful contribution. This workshop
+                                creates an open, judgment-free space where youth can discuss, share knowledge, and take action on climate change.</p>
+
+                            <p>The first session brought together 30 young Fellows, the Mviringo team, and the African Environmental Youth Advisory at the <strong>Ubunifu Hub</strong>, a space hosted by <strong>Planet One</strong>—a Greenpeace initiative
+                                supporting the global youth climate movement. The event marked a decisive step forward in driving youth-led climate action.</p>
+
+                            <blockquote>"Climate Conversations aims to simplify climate change information, making it easy to understand and engaging to learn, with the ultimate goal of turning knowledge into action. Taking the form of conversations, we hope to create
+                                a non-judgmental space to allow for learning and unlearning." <br> - <strong>Natalie Bullut, Co-founder, Mviringo Africa</strong></blockquote>
+
+                            <h3>Key Discussions & Insights</h3>
+                            <p><strong>Guest speaker Nyasaina Kwamboka</strong> led the session, delivering a compelling presentation on climate change and environmental justice. The discussion covered:</p>
+                            <ul>
+                                <li>The causes and impacts of climate change</li>
+                                <li>Climate finance and transnational issues</li>
+                                <li>The global waste trade and its effects on the Global South</li>
+                                <li>The lack of sufficient disaster response systems</li>
+                                <li>The need for more inclusive global environmental education</li>
+                            </ul>
+
+                            <p>Nyasaina emphasized the value of Leah Thomas’s book, <em>The Intersectional Environmentalist</em>, in dismantling oppression for both people and the planet. "It provides us with a framework to focus on intentional solutions
+                                for the challenges intersectional communities face," she noted.</p>
+
+                            <h3>Main Deliberations</h3>
+
+                            <h4>🔹 Gender Disparity in Climate Action</h4>
+                            <p><strong>Grace Kiarie</strong>, a UNESCO member and founder of <em>Eco-vibes Revolution</em>, shared her experience in Laikipia County, where women endure extreme hardships in accessing clean water. "It’s 2024—why are we normalizing
+                                people drinking the same water as wild animals?" she asked passionately.</p>
+
+                            <h4>🔹 Are Small Actions Enough?</h4>
+                            <p>The discussion explored whether significant climate action relies more on systemic government changes or individual responsibility. The consensus? A balance between grassroots activism and institutional reform is key to meaningful
+                                progress.
+                            </p>
+
+                            <h3>Personal Takeaways from Participants</h3>
+
+                            <!-- Takeaways Grid -->
+                            <div class="takeaways-grid">
+
+                                <!-- Card 1: Chebet Ropkoy -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/chebet-ropkoy.png" alt="Chebet Ropkoy" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"I was struck by how government actions can cause marginalized communities to face a disproportionate share of climate impacts. Indigenous knowledge is a valuable approach to tackling these challenges."</p>
+                                        <h4>- Chebet Ropkoy</h4>
+                                        <span>Climate Dialogue Specialist</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 2: Tamika Mugenya -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/tamika-mugenya.jpg" alt="Tamika Mugenya" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"I now understand the global waste trade better—how 90% of waste meant for recycling is dumped in the Global South. It raises crucial questions about environmental justice."</p>
+                                        <h4>- Tamika Mugenya</h4>
+                                        <span>Lawyer specializing in Energy & Climate</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 3: Phillip Mboya -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/phillip-mboya.jpg" alt="Phillip Mboya" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"Seeing young people as the driving force behind change should cause a chain reaction leading to drastic policy shifts."</p>
+                                        <h4>- Phillip Mboya</h4>
+                                        <span>Strathmore Law Student & Red Cross Volunteer</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4: Ivy Mideva -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/ivy-mideva.jpg" alt="Ivy Mideva" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"Participating in Climate Conversations made me more aware of how climate change affects us at a personal level and how we can collectively work toward solutions."</p>
+                                        <h4>- Ivy Mideva</h4>
+                                        <span>3rd Year Law Student & Mviringo Fellow</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 5: Maxwell Omondi -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/maxwell-omondi.jpg" alt="Maxwell Omondi" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"Understanding the concept of environmental justice helped me realize the depth of inequalities within the climate crisis. The discussions were eye-opening."</p>
+                                        <h4>- Maxwell Omondi</h4>
+                                        <span>Environmental Activist</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 6: Florence Waluse -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/florence-waluse.jpg" alt="Florence Waluse" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"The conversation opened my mind to indigenous African solutions in climate action, with insights from theorists like Okoth Ogendo providing valuable perspectives."</p>
+                                        <h4>- Florence Waluse</h4>
+                                        <span>International Studies Graduate</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 7: Hidaya Obwa Oduor -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/hidaya-odwa.jpg" alt="Hidaya Obwa Oduor" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"It was powerful to discuss climate justice in a space where everyone could openly share ideas and propose solutions that are practical and achievable."</p>
+                                        <h4>- Hidaya Obwa Oduor</h4>
+                                        <span>Climate Policy Analyst</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 8: Olivanta Mwenda -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/olivanta-mwenda.jpg" alt="Olivanta Mwenda" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"Hearing different perspectives from fellow young leaders helped me understand the importance of collaboration in climate action."</p>
+                                        <h4>- Olivanta Mwenda</h4>
+                                        <span>Green Economy Specialist</span>
+                                    </div>
+                                </div>
+
+                                <!-- Card 9: Faith Boiyo & Ivans Mwongera -->
+                                <div class="takeaway-card">
+                                    <img src="assets/images/climate_conversations/faith-ivans.jpg" alt="Faith Boiyo & Ivans Mwongera" class="takeaway-image">
+                                    <div class="takeaway-content">
+                                        <p>"The importance of grassroots activism cannot be overstated. Being in a room filled with passionate climate advocates made me more optimistic about the future."</p>
+                                        <h4>- Faith Boiyo</h4>
+                                        <span>Environmental Scientist</span>
+
+                                        <p>"I learned that climate justice is deeply connected to social justice. Addressing climate change must go hand in hand with protecting vulnerable communities."</p>
+                                        <h4>- Ivans Mwongera</h4>
+                                        <span>Community Organizer</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <h3>Moving Forward</h3>
+                            <p>Mviringo Africa plans to continue Climate Conversations with new cohorts of Fellows every year, fostering a network of informed climate advocates. This project aims to cultivate a generation of informed and engaged climate
+                                leaders. Stay on the lookout on their socials for more opportunities to engage and become part of the conversation!</p>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <div class="col-lg-3">
+                        <aside class="blog-sidebar" id="featured-video">
+                            <h3>Featured Video</h3>
+                            <div class="embed-responsive">
+                                <video controls width="100%" style="border-radius: 10px;">
+                                    <source src="assets/videos/climate_conversations.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </aside>
+                        <div id="sidebar-container"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end wpo-blog-pg-section -->
+
+        <!-- start of wpo-site-footer-section -->
+        <footer class="wpo-site-footer">
+            <div class="wpo-upper-footer">
+                <div class="container" id="contacts">
+                    <div class="row">
+                        <!-- Logo and Description -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="assets/images/MVIRINGO_LOGO.png" alt="Mviringo Africa Logo" class="footer-logo">
+                                </div>
+                                <p>Promoting youth inclusion in finding and implementing sustainable solutions to tackle environmental and climate relate problems.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Quick Links -->
+                        <div class="col col-lg-2 col-md-6 col-sm-12">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <ul class="quick-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#contacts">Contact Us</a></li>
+                                    <li><a href="team.html">Our Team</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Contact Info -->
+                        <div class="col col-lg-4 col-md-6 col-sm-12">
+                            <div class="widget contact-widget">
+                                <div class="widget-title">
+                                    <h3>Contact Us</h3>
+                                </div>
+                                <ul class="contact-info">
+                                    <li><i class="fa-regular fa-envelope"></i><a href="mailto:info@mviringoafrica.org">info@mviringoafrica.org</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="tel:+254746429490">+254 746 429
+                                            490</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Social Links -->
+                        <div class="col col-lg-3 col-md-6 col-sm-12">
+                            <div class="widget social-widget">
+                                <div class="widget-title">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <ul class="social-links">
+                                    <li>
+                                        <a href="https://wa.me/254746429490">
+                                            <i class="fa-brands fa-whatsapp">
+                                            </i>
+                                        </a>
+                                    </li>
+                                    <li><a href="https://twitter.com/MviringoAfrica"><i
+                                                class="fa-brands fa-x-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/mviringoafrica"><i
+                                                class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="https://www.tiktok.com/@mviringoafrica"><i
+                                                class="fa-brands fa-tiktok"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company/mviringo-africa/"><i
+                                                class="fa-brands fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Lower Footer -->
+            <div class="wpo-lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-xs-12">
+                            <p class="copyright"> &copy; 2024 Mviringo Africa. Design By <a href="https://ewoigiftportfolio.netlify.app/">Ewoi</a>. All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of wpo-site-footer-section -->
+    </div>
+    <!-- end of page-wrapper -->
+
+    <!-- All JavaScript files
+    ================================================== -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins for this template -->
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/jquery.dlmenu.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <!-- Custom script for this template -->
+    <script src="assets/js/script.js"></script>
+    <!-- Automated Sidebar script -->
+    <script src="sidebar.js"></script>
+    <!-- projects dropdown -->
+    <script src="assets/js/menu.js"></script>
+    <!-- Swiper.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper-init.js"></script>
+</body>
+
+</html>

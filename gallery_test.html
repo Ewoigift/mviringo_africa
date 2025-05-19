@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Circle - Mviringo Africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/owl.transitions.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .wpo-site-header {
+            background-color: #337ab7;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .wpo-site-header .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        
+        .wpo-site-header .navbar-brand img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        
+        .wpo-site-header .navbar-nav {
+            margin-top: 10px;
+        }
+        
+        .wpo-site-header .navbar-nav li {
+            margin-right: 20px;
+        }
+        
+        .wpo-site-header .navbar-nav li a {
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .wpo-site-header .navbar-nav li a:hover {
+            color: #337ab7;
+        }
+        /* Breadcrumb Styles */
+        
+        .wpo-breadcumb-area {
+            background-image: url(assets/images/swapcircle/swap-circle.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        
+        .wpo-breadcumb-area h2 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .wpo-breadcumb-area ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        
+        .wpo-breadcumb-area ul li {
+            margin-right: 20px;
+        }
+        
+        .wpo-breadcumb-area ul li a {
+            color: #fff;
+            font-size: 18px;
+        }
+        
+        .wpo-breadcumb-area ul li a:hover {
+            color: #337ab7;
+        }
+        /* Gallery Styles */
+        
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .gallery-container .grid {
+            flex: 1 1 calc(33.333% - 10px);
+            box-sizing: border-box;
+        }
+        
+        .gallery-container .grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        /* Adjust for one or two images on large screens */
+        
+        @media (min-width: 992px) {
+            .gallery-container .grid:nth-child(1):only-child {
+                flex: 1 1 100%;
+            }
+            .gallery-container .grid:nth-child(1):only-child img {
+                width: 100%;
+                height: auto;
+            }
+            .gallery-container .grid:nth-child(1):nth-last-child(1):only-child {
+                flex: 1 1 100%;
+            }
+            .gallery-container .grid:nth-child(1):nth-last-child(1):only-child img {
+                width: 100%;
+                height: auto;
+            }
+            .gallery-container .grid:nth-child(1):nth-last-child(2) {
+                flex: 1 1 50%;
+            }
+            .gallery-container .grid:nth-child(1):nth-last-child(2) img {
+                width: 100%;
+                height: auto;
+            }
+            .gallery-container .grid:nth-child(2):nth-last-child(1) {
+                flex: 1 1 50%;
+            }
+            .gallery-container .grid:nth-child(2):nth-last-child(1) img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        /* Responsive Styles */
+        
+        @media (max-width: 992px) {
+            .gallery-container .grid {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-container .grid {
+                flex: 1 1 calc(100% - 10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- start page-wrapper -->
+    <div class="page-wrapper">
+        <!-- Start header -->
+        <header id="header">
+            <div class="wpo-site-header wpo-header-style-4" style="background-color: rgba(240, 248, 255, 0.597) !important;">
+                <nav class="navigation navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-2 d-lg-none d-flex justify-content-start">
+                                <div class="mobail-menu">
+                                    <button type="button" class="navbar-toggler open-btn">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class ="icon-bar first-angle"></span>
+                                        <span class="icon-bar middle-angle"></span>
+                                        <span class="icon-bar last-angle"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-8 col-lg-3 d-flex justify-content-center justify-content-lg-start">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html">
+                                        <img src="assets/images/MVIRINGO_LOGO.png" alt="" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-1 col-1">
+                                <div id="navbar" class="collapse navbar-collapse navigation-holder">
+                                    <button class="menu-close"><i class="ti-close"></i></button>
+                                    <ul class="nav navbar-nav mb-2 mb-lg-0">
+                                        <li class="menu-item-has-children">
+                                            <a class="active" href="index.html">Home</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="team.html">Team </a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li class="menu-item-has-children">
+                                            <a href="contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End header -->
+
+        <!-- Swap Circle Event Section -->
+        <div class="wpo-project-title-area">
+            <div class="wpo-project-title-wrap">
+                <h2>Swap Circle 2023</h2>
+                <p class="gallery-description">This event was held on June 10, 2023, and was a great opportunity for people to swap gently used items. We had a great turnout and everyone had a lot of fun!</p>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="grid">
+                <img src="assets/images/swapcircle/swap-circle.jpg" alt="Swap Circle 2023">
+            </div>
+
+
+        </div>
+
+        <div class="wpo-project-title-area">
+            <div class="wpo-project-title-wrap">
+                <h2>Swap Circle 2024</h2>
+                <p class="gallery-description">This event was held on June 15, 2024, and was an even bigger success than the previous year. We had a great turnout and everyone had a blast swapping items!</p>
+            </div>
+        </div>
+        <div class="gallery-container">
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1562.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1568.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1570.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1571.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1575.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1581.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1584.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1586.jpeg" alt="Swap Circle 2024">
+            </div>
+            <div class="grid">
+                <img src="assets/images/swapcircle/IMG_1600.jpeg" alt="Swap Circle 2024">
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 Mviringo Africa. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <!-- end page-wrapper -->
+</body>
+
+</html>
